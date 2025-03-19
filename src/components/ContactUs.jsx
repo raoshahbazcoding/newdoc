@@ -2,9 +2,9 @@ const contact = "/contact.png";
 
 export default function ContactUs() {
   return (
-    <section className="py-8 md:py-24">
+    <section className="py-8 md:py-30">
       <div className="container mx-auto px-4">
-        <div className="bg-[#E8F4F4] flex flex-col md:flex-row items-center rounded-lg relative overflow-hidden">
+        <div className="bg-[#E8F4F4] flex flex-col md:flex-row items-center rounded-lg relative ">
           {/* Left Content */}
           <div className="p-10 md:p-16 md:w-1/2">
             <div className="uppercase text-[#1D5C5C] font-medium mb-4">
@@ -26,7 +26,13 @@ export default function ContactUs() {
           </div>
 
           {/* Right Image - Doctor Overlapping Properly */}
-          <img src={contact} alt="doctor" />
+          <div className="md:w-1/2  ">
+            <img
+              src={contact}
+              alt="doctor"
+              className="max-h-[400px] md:max-h-[600px] object-cover md:absolute md:bottom-0 md:right-0"
+            />
+          </div>
         </div>
       </div>
     </section>
