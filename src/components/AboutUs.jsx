@@ -1,5 +1,5 @@
 
-import about from '../assets/about/aboutus.png'
+import about from '../assets/ab.png'
 import vector1 from '../assets/about/Vector-1.png'
 import vector2 from '../assets/about/Vector-2.png'
 import vector3 from '../assets/about/vector-3.png'
