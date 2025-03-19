@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 /* Import the exact fonts */
 @font-face {
   font-family: 'NewYork';
@@ -7,6 +8,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Nova';
+  src: url('./assets/fonts/Nova/proximanova_light.otf') format('truetype'); /* Update with your actual file */
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Custom font styles */
 h1, h2, h3, h4, h5, h6 {
@@ -14,4 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-
+body, p, div {
+  font-family: 'Nova', sans-serif;
+}
