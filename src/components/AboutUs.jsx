@@ -1,9 +1,9 @@
 
 import about from '../assets/ab.png'
-import vector1 from '../assets/about/Vector-1.png'
-import vector2 from '../assets/about/Vector-2.png'
-import vector3 from '../assets/about/vector-3.png'
-import call from '../assets/about/call.png'
+import vector1 from '../assets/Vector-1.png'
+import vector2 from '../assets/Vector-2.png'
+import vector3 from '../assets/vector-3.png'
+import call from '../assets/call.png'
 
 export default function AboutUs() {
   const features = [
