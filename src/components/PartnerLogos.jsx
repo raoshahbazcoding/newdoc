@@ -12,7 +12,7 @@ export default function ServicesSection() {
     <div>
       <div className="hidden md:block">
       <section
-      className="  relative w-full flex items-center h-[30vh] justify-center  py-50 md:py-16"
+      className="  relative w-full flex items-center h-[300px] justify-center  py-50 md:py-16"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -49,7 +49,7 @@ export default function ServicesSection() {
       {/* For Mobile */}
       <div className="md:hidden">
         <section
-      className="relative w-full flex  h-[20vh]  items-center justify-center"
+      className="relative w-full flex  h-[200px]  items-center justify-center"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",

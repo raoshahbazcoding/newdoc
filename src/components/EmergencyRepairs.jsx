@@ -1,26 +1,23 @@
 
-const background = "/bg.png";
+const embackground = "/bg.png";
 export default function EmergencyRepairs() {
     return (
       
       <section className="w-full relative">
         <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
+        
+{/* bg Image */}
+     {/* Background Image with Dark Overlay */}
         <div
           className="w-full h-[400px] bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url()",
-          }}
         >
 
         </div>
 
-{/* bg Image */}
-     {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 ">
         <img 
-          src= {background} 
-          alt="Hero Background" 
+          src= {embackground} 
+          alt="Emergency Call" 
           className="w-full h-full flex justify-center items-center object-cover "
         />
         <div className="absolute inset-0 bg-[#0C2F2FB2] opacity-90"></div> {/* Dark Overlay */}

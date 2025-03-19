@@ -7,15 +7,15 @@ const profile3 = "/profile3.png";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-[80vh] flex items-center justify-center ">
+    <div className="relative w-full  flex items-center justify-center   ">
       {/* Background Image with Dark Overlay */}
-      <div className="absolute inset-0 ">
+      <div className="absolute inset-0  ">
         <img 
           src={hero} 
           alt="Hero Background" 
-          className="w-full h-full flex justify-center items-center object-cover "
+          className="w-full h-full  object-cover    "
         />
-        <div className="absolute inset-0 bg-[#0C2F2FB2] opacity-90"></div> {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-[#0C2F2FB2] opacity-90  "></div> {/* Dark Overlay */}
       </div>
      
 
