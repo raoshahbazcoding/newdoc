@@ -1,16 +1,18 @@
 const doc1 = "/doc1.png"
 const doc2 = "/doc2.png"
+const doc3 = "/docs1.png"
+const doc4 = "/docs2.png"
 
 const teamMembers = [
   {
     name: "Stacia McCahan",
     role: "Registered Mental Health",
-    image: doc1,
+    image: doc3,
   },
   {
     name: "Katie Stuart",
     role: "LMHC",
-    image: doc2,
+    image: doc4,
   },
   {
     name: "Alyssa Finkelstein",
