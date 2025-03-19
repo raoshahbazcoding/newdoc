@@ -1,5 +1,4 @@
-import React from "react";
-import contact from "../assets/contact.png";
+const contact = "/contact.png";
 
 export default function ContactUs() {
   return (

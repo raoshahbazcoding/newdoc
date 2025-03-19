@@ -1,7 +1,8 @@
-import bg from '../assets/Emergency/bg.png'
 
+const background = "/bg.png";
 export default function EmergencyRepairs() {
     return (
+      
       <section className="w-full relative">
         <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
         <div
@@ -18,7 +19,7 @@ export default function EmergencyRepairs() {
      {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 ">
         <img 
-          src={bg} 
+          src= {background} 
           alt="Hero Background" 
           className="w-full h-full flex justify-center items-center object-cover "
         />

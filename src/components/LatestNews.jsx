@@ -1,7 +1,11 @@
+const news1 = "/news1.png";
+const news2 = "/news2.png";
+const news3 = "/news3.png";
+
 export default function LatestNews() {
   const news = [
     {
-      image: "src/assets/image 5.png",
+      image: news1,
       title: "Appropriately productize",
       date: "Jan 21, 2019",
       comments: "45 Comments",
@@ -9,7 +13,7 @@ export default function LatestNews() {
       excerpt: "Some quick example text to build on the",
     },
     {
-      image: "src/assets/image 6.png",
+      image: news2,
       title: "Quickly formulate backend",
       date: "May 26, 2019",
       comments: "30 Comments",
@@ -17,7 +21,7 @@ export default function LatestNews() {
       excerpt: "Synergistically engage effective ROI after",
     },
     {
-      image: "src/assets/image 7.png",
+      image: news3,
       title: "Objectively extend extensive",
       date: "Apr 25, 2019",
       comments: "41 Comments",
@@ -25,7 +29,7 @@ export default function LatestNews() {
       excerpt: "Holistically mesh open-source leadership",
     },
     {
-      image: "src/assets/image 5.png",
+      image: news1 ,
       title: "Appropriately productize",
       date: "Jan 21, 2019",
       comments: "45 Comments",

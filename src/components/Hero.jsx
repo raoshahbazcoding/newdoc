@@ -1,9 +1,9 @@
 import { Star } from 'lucide-react';
-import hero from '../assets/hero.png';
-import heroMobile from '../assets/hero-mobile.png';
-import profile1 from '../assets/profile1.png';
-import profile2 from '../assets/profile4.png';
-import profile3 from '../assets/profile3.png';
+
+const hero = "/hero.png";
+const profile1 = "/profile1.png";
+const profile2 = "/profile4.png";
+const profile3 = "/profile3.png";
 
 export default function Hero() {
   return (

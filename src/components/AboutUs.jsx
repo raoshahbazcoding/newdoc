@@ -1,8 +1,8 @@
-import about from "../assets/ab.png";
-import vector1 from "../assets/Vector-1.png";
-import vector2 from "../assets/Vector-2.png";
-import vector3 from "../assets/vector-3.png";
-import call from "../assets/call.png";
+const vector1 = "/Vector-1.png";
+const vector2 = "/Vector-2.png";
+const vector3 = "/vector-3.png";
+const about = "/ab.png";
+const call = "call.png";
 
 export default function AboutUs() {
   const features = [
@@ -32,7 +32,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-2">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="relative">
-              <img src={about} alt="Doctor" className="w-full h-auto" />
+              <img src={about} alt="About Us" className="w-full h-auto" />
             </div>
 
             <div>
@@ -140,6 +140,7 @@ export default function AboutUs() {
                 >
                   <img src={call} alt="call" />
                   <span className="text-xl font-semibold px-2">
+
                     CALL +92 123 456 0939
                   </span>
                 </a>

@@ -1,6 +1,7 @@
 
-import storyImg from '../assets/story/story.jpeg'
-import video from '../assets/story/VIDEO.png'
+
+const storyImg = "/story.jpeg"
+const video = "/VIDEO.png"
 
 export default function ShareStory() {
   return (
@@ -15,7 +16,7 @@ export default function ShareStory() {
 
           <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-white text-center px-4">
             <div className="bg-white rounded-full p-4 mb-8 cursor-pointer hover:bg-gray-100 transition-colors">
-              <img src={video} alt="VIDEO" className='h-20' />
+              <img src={video} alt="VIDEO" className='h-10 md:h-15' />
             </div>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 max-w-4xl">

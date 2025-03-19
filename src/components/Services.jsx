@@ -1,11 +1,11 @@
 
+const Counseling = "/Vector-service-1.png"
+const Facial = "/Facial.png"
+const Restorative = "/Restorative.png"
+const Dermal = "/Dermal.png"
+const General = "/General.png"
+const Arrows = "/Arrow.png"
 
-import Counseling from '../assets/Services/Vector-service-1.png'
-import Facial from '../assets/Services/Facial.png'
-import Restorative from '../assets/Services/Restorative.png'
-import Dermal from '../assets/Services/Dermal.png'
-import General from '../assets/Services/General.png'
-import Arrows from '../assets/Services/Arrow.png'
 
 export default function Services() {
   const services = [
@@ -74,7 +74,7 @@ export default function Services() {
         </div>
 
         <div className="text-center mt-16">
-          <a href="/services" className="bg-[#1d5c5c] text-white px-8 py-4 inline-block uppercase">
+          <a href="#" className="bg-[#1d5c5c] text-white px-8 py-4 inline-block uppercase">
             VIEW ALL SERVICES
           </a>
         </div>

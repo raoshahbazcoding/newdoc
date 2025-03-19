@@ -1,7 +1,8 @@
-"use client"
-
-import dot from '../assets/testimonial/tab.png'
 import { useState } from "react"
+// all Images Stores Here
+const dot = "/tab.png"
+const cl1 = "/client_1.png"
+const cl2 = "/client_2.jpg.png"
 
 export default function ClientTestimonials() {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -13,7 +14,7 @@ export default function ClientTestimonials() {
       role: "Software Engineer",
       testimonial:
         "I had an outstanding experience with Dentist His meticulous approach to prosthetic cosmetic dentistry truly sets him apart.",
-      image: "src/assets/testimonial/client_1.png", // Replace with your actual image path
+      image: cl1 // Replace with your actual image path
     },
     {
       id: 2,
@@ -21,14 +22,14 @@ export default function ClientTestimonials() {
       role: "Sr. UX/UI Designer",
       testimonial:
         "I had an outstanding experience with Dentis His meticulous approach to prosthetic cosmetic dentistry truly sets him apart.",
-      image: "src/assets/testimonial/client_2.jpg.png", // Replace with your actual image path
+      image: cl2, // Replace with your actual image path
     },
     {
       id: 3,
       name: "Latoya Brown",
       role: "Software Engineer",
       testimonial: "The entire team was friendly and made sure I was at ease throughout the treatment.",
-      image: "src/assets/testimonial/client_1.png", // Replace with your actual image path
+      image: cl1, // Replace with your actual image path
     },
   ]
 

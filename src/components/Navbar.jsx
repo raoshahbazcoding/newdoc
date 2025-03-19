@@ -1,6 +1,8 @@
 import { Clock, Phone, MapPin, Menu } from "lucide-react";
 import { useState } from "react";
-import logo from "../assets/logo3.png";
+
+const logo = "/logo3.png"
+
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -83,11 +85,11 @@ export default function Navbar() {
 
           <div className="hiden bg-white shadow-md text-center p-4 space-y-4">
             {["Home", "About us", "Our Staff", "Blogs", "Feedback", "FAQ's", "Services", "Contact us"].map((item) => (
-              <a key={item} href={`/${item.toLowerCase().replace(" ", "")}`} className="block text-sm font-medium hover:text-[#1d5c5c]">
+              <a key={item} href={`/${item.toLowerCase().replace(" ", "")}`} className="block text-sm font-medium  hover:text-[#1d5c5c]">
                 {item}
               </a>
             ))}
-            <a href="/appointment" className="block bg-[#1d5c5c] text-white px-6 py-3 text-sm font-medium uppercase text-center">
+            <a href="#" className="block bg-[#1d5c5c] text-white px-6 py-3 text-sm font-medium uppercase text-center">
               GET APPOINTMENT
             </a>
           </div>

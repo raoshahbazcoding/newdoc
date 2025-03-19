@@ -1,25 +1,26 @@
-import React from "react";
+const doc1 = "/doc1.png"
+const doc2 = "/doc2.png"
 
 const teamMembers = [
   {
     name: "Stacia McCahan",
     role: "Registered Mental Health",
-    image: "src/assets/doc1.png",
+    image: doc1,
   },
   {
     name: "Katie Stuart",
     role: "LMHC",
-    image: "src/assets/doc2.png",
+    image: doc2,
   },
   {
     name: "Alyssa Finkelstein",
     role: "Registered Mental Health",
-    image: "src/assets/doc1.png",
+    image: doc1,
   },
   {
     name: "Alyssa Finkelstein",
     role: "Registered Mental Health",
-    image: "src/assets/doc2.png",
+    image: doc2,
   },
 ];
 

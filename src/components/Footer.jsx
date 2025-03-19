@@ -1,6 +1,8 @@
-import { Facebook, Twitter, Instagram, ChevronRight } from "lucide-react"
-import logo from '../assets/Footer/footer.png'
-import fb from '../assets/Footer/fb.png'
+import {  Twitter, Instagram, ChevronRight } from "lucide-react"
+
+
+const logo = "/footer.png";
+const fb = "/fb.png";
 
 export default function Footer() {
   return (
@@ -9,7 +11,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
             <a href="/" className="inline-block mb-6">
-              <img src={logo} alt="City Dental Care" className="h-auto w-[180px]" />
+              <img src={logo} alt="City Dental Care" className="h-auto w-[180px] hidden md:block" />
             </a>
             <p className="text-sm mb-6">
               At City Dental Clinic, our mission is to enhance your denture experience by providing excellent denture

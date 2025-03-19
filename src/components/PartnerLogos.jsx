@@ -1,8 +1,7 @@
-import React from "react";
-import logo1 from "../assets/plogo-1.png"; // Update with correct path
-import logo2 from "../assets/p-logo3.png"; // Update with correct path
-import logo3 from "../assets/plogo-1.png"; // Update with correct path
-import bg from "../assets/bg.png"; // Update with correct path
+const logo1 = "/plogo-1.png"
+const logo2 = "/p-logo3.png"
+const logo3 = "/plogo-1.png"
+const bg = "/bg.png"
 
 // logos For Mobile
 import logom1 from '../assets/logo-m.png'
