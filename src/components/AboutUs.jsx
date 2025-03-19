@@ -1,5 +1,5 @@
 
-import aboutus from '../assets/about/aboutus.png'
+import about from '../assets/about/aboutus.png'
 import vector1 from '../assets/about/Vector-1.png'
 import vector2 from '../assets/about/Vector-2.png'
 import vector3 from '../assets/about/vector-3.png'
@@ -31,7 +31,7 @@ export default function AboutUs() {
       <div className="container mx-auto px-2">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="relative">
-            <img src={aboutus} alt="Doctor" className="w-full h-auto" />
+            <img src={about} alt="Doctor" className="w-full h-auto" />
           </div>
 
           <div>
