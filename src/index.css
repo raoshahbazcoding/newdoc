@@ -1,0 +1,17 @@
+@import "tailwindcss";
+/* Import the exact fonts */
+@font-face {
+  font-family: 'NewYork';
+  src: url('./assets/fonts/nya.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Custom font styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'NewYork', sans-serif;
+  font-weight: 300;
+}
+
+
