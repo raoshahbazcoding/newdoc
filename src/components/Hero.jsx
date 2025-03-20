@@ -39,13 +39,13 @@ export default function Hero() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a 
-              href="/appointment" 
+              href="#" 
               className="bg-[#225555] border border-[#225555] text-white px-8 py-4 text-center uppercase font-medium hover:bg-transparent transition"
             >
               GET APPOINTMENT
             </a>
             <a 
-              href="/services" 
+              href="#" 
               className="bg-transparent border border-[#319684] text-white px-8 py-4 text-center uppercase font-medium hover:bg-white hover:text-[#003B3B] transition"
             >
               VIEW OUR SERVICES
