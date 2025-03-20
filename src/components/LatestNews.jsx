@@ -9,7 +9,7 @@ export default function LatestNews() {
       title: "Appropriately productize",
       date: "Jan 21, 2019",
       comments: "45 Comments",
-      shares: "10 Shares",
+   
       excerpt: "Some quick example text to build on the",
     },
     {
@@ -17,7 +17,6 @@ export default function LatestNews() {
       title: "Quickly formulate backend",
       date: "May 26, 2019",
       comments: "30 Comments",
-      shares: "5 Shares",
       excerpt: "Synergistically engage effective ROI after",
     },
     {
@@ -25,7 +24,7 @@ export default function LatestNews() {
       title: "Objectively extend extensive",
       date: "Apr 25, 2019",
       comments: "41 Comments",
-      shares: "30 Shares",
+      
       excerpt: "Holistically mesh open-source leadership",
     },
     {
@@ -33,13 +32,13 @@ export default function LatestNews() {
       title: "Appropriately productize",
       date: "Jan 21, 2019",
       comments: "45 Comments",
-      shares: "10 Shares",
+    
       excerpt: "Some quick example text to build on the",
     },
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-40 bg-white">
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4">
@@ -65,7 +64,6 @@ export default function LatestNews() {
                 <div className="text-sm text-gray-500 mb-2 flex flex-wrap gap-2">
                   <span>• {item.date}</span>
                   <span>• {item.comments}</span>
-                  <span>• {item.shares}</span>
                 </div>
                 <p className="text-gray-600 mb-4">{item.excerpt}</p>
 

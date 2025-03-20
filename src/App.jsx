@@ -9,7 +9,7 @@ import LatestNews from "./components/LatestNews"
 import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Footer from "./components/Footer"
-import ServicesSection from "./components/PartnerLogos"
+import Partners from "./components/PartnerLogos"
 // import WhyChooseUs from "./components/WhyChooseUs"
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
       <OurTeam />
       <EmergencyRepairs />
       <ContactUs />
-      <ServicesSection />
+      <Partners />
       <LatestNews />
       <Footer />
     </div>
