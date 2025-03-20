@@ -8,7 +8,7 @@ const clock = "/clock-hero.png";
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[700px] md:min-h-[920px]  flex flex-col justify-center items-center">
+    <div className="relative w-full min-h-[600px] md:min-h-[800px]  flex flex-col justify-center items-center">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <div
@@ -20,7 +20,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-8 py-20 md:pt-32 text-left relative z-10 text-white md:text-left">
+      <div className="container mx-auto px-8  md:px-1 text-left relative z-10 text-white md:text-left">
         <div className="max-w-4xl">
           {/* Title */}
           <h1 className="text-3xl font-newyork md:text-2xl lg:text-7xl font-light mb-6">
