@@ -45,7 +45,7 @@ export default function ClientTestimonials() {
   }, []);
 
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 py-16 flex flex-col items-center">
+    <div className=" h-[900px] mb-20 md:mb-1 w-full max-w-7xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
       <h2 className="text-4xl md:text-5xl font-light text-center mb-12">
         What Our Clients Say
       </h2>

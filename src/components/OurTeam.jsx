@@ -28,7 +28,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <div className="py-16 bg-white">
+    <div className=" mb-60 bg-white  flex flex-col items-center justify-center " >
       <div className="text-center">
         <h2 className="text-4xl font-bold text-gray-900">Our Team</h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -36,15 +36,15 @@ const OurTeam = () => {
         </p>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto  ">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-gray-50 rounded-lg shadow-lg overflow-hidden text-center">
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-64 object-cover"
+              className="w-full h-75 object-cover"
             />
-            <div className="p-6">
+            <div className="p-8">
               <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
               <p className="text-gray-600">{member.role}</p>
             </div>
