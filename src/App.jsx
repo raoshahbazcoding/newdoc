@@ -10,7 +10,7 @@ import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Footer from "./components/Footer"
 import ServicesSection from "./components/PartnerLogos"
-import WhyChooseUs from "./components/WhyChooseUs"
+// import WhyChooseUs from "./components/WhyChooseUs"
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
       <AboutUs />
       <Services />
       <ShareStory />
-      <Testimonials />
-      <WhyChooseUs />
+      <Testimonials /> 
+      {/* <WhyChooseUs /> */}
       <OurTeam />
       <EmergencyRepairs />
       <ContactUs />

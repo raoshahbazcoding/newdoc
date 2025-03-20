@@ -46,7 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 ">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-4">
