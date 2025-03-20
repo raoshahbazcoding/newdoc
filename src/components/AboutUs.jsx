@@ -63,17 +63,17 @@ export default function AboutUs() {
 
               <div className="flex gap-4 mt-8">
                 <a
-                  href="/appointment"
+                  href="#"
                   className="bg-[#1d5c5c] text-white px-6 py-3 uppercase"
                 >
                   GET APPOINTMENT
                 </a>
                 <a
-                  href="/contact"
+                  href="#"
                   className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-6 py-3 uppercase flex items-center"
                 >
                   <img src={call} alt="call" />
-                  <span className="text-xl font-semibold px-2">
+                  <span className=" font-semibold px-2 tex-xl">
                     
                     CALL +92 123 456 0939
                   </span>
@@ -139,7 +139,7 @@ export default function AboutUs() {
                   className="border  border-[#225555] text-[#225555]  bg-[#E4F5F5] px-4 py-3 uppercase flex items-center justify-center"
                 >
                   <img src={call} alt="call" />
-                  <span className="text-xl font-semibold px-2">
+                  <span className=" font-semibold px-2">
 
                     CALL +92 123 456 0939
                   </span>
