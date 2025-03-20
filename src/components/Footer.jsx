@@ -17,7 +17,7 @@ export default function Footer() {
               At City Dental Clinic, our mission is to enhance your denture experience by providing excellent denture
               care
             </p>
-            <a href="/about" className="flex items-center text-sm uppercase">
+            <a href="#" className="flex  font-semibold items-center text-sm uppercase text-[#A3DAEC]">
               MORE ABOUT <ChevronRight className="ml-2 h-4 w-4" />
             </a>
           </div>
@@ -31,22 +31,22 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/about" className="flex items-center">
+                <a href="#" className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4" /> About
                 </a>
               </li>
               <li>
-                <a href="/services" className="flex items-center">
+                <a href="#" className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4" /> Services
                 </a>
               </li>
               <li>
-                <a href="/patients" className="flex items-center">
+                <a href="#" className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4" /> For Patients
                 </a>
               </li>
               <li>
-                <a href="/contact" className="flex items-center">
+                <a href="#" className="flex items-center">
                   <ChevronRight className="mr-2 h-4 w-4" /> Contact
                 </a>
               </li>
