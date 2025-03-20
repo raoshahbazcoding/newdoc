@@ -1,25 +1,25 @@
-const vector1 = "/Vector-1.png";
-const vector2 = "/Vector-2.png";
-const vector3 = "/vector-3.png";
+// const vector1 = "/Vector-1.png";
+// const vector2 = "/Vector-2.png";
+// const vector3 = "/vector-3.png";
 const about = "/doc-about-us.png";
-const call = "call.png";
+import { PhoneCall,ShieldCheck ,Hospital ,HeartPulse   } from 'lucide-react';
 
 export default function AboutUs() {
   const features = [
     {
-      icon: <img src={vector1} alt="vector1" />,
+      icon: <ShieldCheck className='h-8 w-8 text-[#3A6969] ' />,
       title: "Trusted Physicians",
       description:
         "Nascetur condimentum vivamus in consectetuer dictum ridiculus taciti.",
     },
     {
-      icon: <img src={vector2} alt="vector1" />,
+      icon: <Hospital className='text-[#3A6969] h-8 w-8' />,
       title: "Holistic Approach",
       description:
         "Nascetur condimentum vivamus in consectetuer dictum ridiculus taciti.",
     },
     {
-      icon: <img src={vector3} alt="vector1" />,
+      icon: < HeartPulse  className='h-8 w-8 text-[#3A6969] ' />,
       title: "Preventive Care",
       description:
         "Nascetur condimentum vivamus in consectetuer dictum ridiculus taciti.",
@@ -72,7 +72,8 @@ export default function AboutUs() {
                   href="#"
                   className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-6 py-3 uppercase flex items-center hover:bg-[#339485] hover:text-white "
                 >
-                  <img src={call} alt="call" className=" hover:text-whit"/>
+                  {/* <img src={call} alt="call" className=" hover:text-whit"/> */}
+                  <PhoneCall />
                   <span className=" font-semibold px-2 tex-xl  ">
                     
                    +92 123 456 0939
@@ -138,10 +139,11 @@ export default function AboutUs() {
                   href="#"
                   className="border  border-[#225555] text-[#225555]  bg-[#E4F5F5] px-4 py-3 uppercase flex items-center justify-center"
                 >
-                  <img src={call} alt="call" />
+                  {/* <img src={call} alt="call" /> */}
+                  <PhoneCall />
                   <span className=" font-semibold px-2">
 
-                    CALL +92 123 456 0939
+                    +92 123 456 0939
                   </span>
                 </a>
               </div>

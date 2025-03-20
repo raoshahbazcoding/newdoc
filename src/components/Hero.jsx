@@ -1,10 +1,9 @@
-import { Star } from "lucide-react";
+import { Star,CalendarCheck ,Clock1    } from "lucide-react";
 
 const hero = "/bg-hero.png";
 const profile1 = "/profile1.png";
 const profile2 = "/profile4.png";
 const profile3 = "/profile3.png";
-const clock = "/clock-hero.png";
 
 export default function Hero() {
   return (
@@ -94,15 +93,17 @@ export default function Hero() {
 
       {/* Fixed Get Appointment Sidebar */}
       <div className="fixed right-5 top-[40%] transform -translate-y-1/2 z-50 hidden md:block">
-        <div className="bg-[#37FFDB] text-[#1d5c5c] font-bold py-5 px-8 rounded rotate-[-90deg] origin-right whitespace-nowrap">
-          GET APPOINTMENT
+        <div className="bg-[#37FFDB] text-[#1D5C5C]  flex flex-wrap font-bold py-5 px-8 rounded rotate-[-90deg] origin-right whitespace-nowrap">
+         
+         <CalendarCheck  className="w-8 h-6 "/>
+          <span className="font-bold ml-2" >GET APPOINTMENT</span>
         </div>
       </div>
 
       {/* Mobile Get Appointment Sidebar */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 md:hidden">
-        <div className="bg-[#37FFDB] py-5 px-5 rounded rotate-[-90deg] origin-right whitespace-nowrap">
-          <img src={clock} alt="clock" className="h-5" />
+        <div className="bg-[#37FFDB] py-3 px-3 rounded rotate-[-90deg] origin-right whitespace-nowrap">
+         <Clock1  className="text-[#1D5C5C]"/>
         </div>
       </div>
     </div>
