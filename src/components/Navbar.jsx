@@ -1,4 +1,4 @@
-import { Clock, Phone, MapPin, Menu, ChevronDown } from "lucide-react";
+import { Clock, Phone, MapPin, Menu, ChevronDown, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const logo = "/logo3.png";
@@ -22,7 +22,6 @@ export default function Navbar() {
 
   const serviceItems = ["Dentist", "Therapist", "Neurologist"];
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".dropdown")) {
@@ -38,24 +37,24 @@ export default function Navbar() {
     <>
       {/* Contact Info Section */}
       <div className="w-full border-b border-gray-300">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-6">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-2 px-4 md:px-6">
           {/* Logo */}
           <a href="/" className="hidden md:block">
-            <img src={logo} alt="City Dental Care" className="h-auto w-[100px]" />
+            <img src={logo} alt="City Dental Care" className="w-[100px] md:w-[120px] lg:w-[120px] h-auto" />
           </a>
 
           {/* Contact Details */}
-          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0  md:text-left">
+          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0 md:text-left">
             {[
-              { icon: <Clock className="text-white h-5 w-5 " />, label: "Opening Time", value: "Monday - Friday 8AM - 7PM" },
-              { icon: <Phone className="text-white h-5 w-5" />, label: "Phone no", value: "+0800 2336 7811" },
+              { icon: <Clock className="text-white h-5 w-5" />, label: "Opening Time", value: "Mon - Fri 8AM - 7PM" },
+              { icon: <Phone className="text-white h-5 w-5" />, label: "Phone", value: "+0800 2336 7811" },
               { icon: <MapPin className="text-white h-5 w-5" />, label: "Location", value: "New York, W2 3XE", hidden: true },
             ].map((item, index) => (
               <div key={index} className={`flex items-center gap-2 ${item.hidden ? "hidden md:flex" : ""}`}>
                 <div className="bg-[#1d5c5c] p-2 rounded">{item.icon}</div>
                 <div>
-                  <p className="text-sm text-gray-500">{item.label}</p>
-                  <p className="text-sm">{item.value}</p>
+                  <p className="text-xs text-gray-500">{item.label}</p>
+                  <p className="text-xs md:text-sm">{item.value}</p>
                 </div>
               </div>
             ))}
@@ -66,6 +65,11 @@ export default function Navbar() {
       {/* Navigation Section */}
       <div className="w-full py-2 sticky top-0 z-50 bg-white shadow-md">
         <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-6">
+          {/* Logo (Visible on Mobile) */}
+          <a href="/" className="md:hidden">
+            <img src={logo} alt="City Dental Care" className="w-[80px] h-auto" />
+          </a>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8 relative">
             {menuItems.map((item) =>
@@ -110,32 +114,25 @@ export default function Navbar() {
             )}
           </nav>
 
-          {/* Appointment Button */}
-          <a href="#" className="hidden md:block bg-[#1d5c5c] text-white px-6 py-3 text-sm font-medium uppercase">
+          {/* Appointment Button (Desktop Only) */}
+          <a href="#" className="hidden md:block bg-[#1d5c5c] text-white px-6 py-2 text-sm font-medium uppercase">
             GET APPOINTMENT
           </a>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
-          <div className="flex">
-            <a href="/" className="mr-[15rem] px-4 ">
-              <img src={logo} alt="City Dental Care" className="h-auto w-[110px]" />
-            </a>
-            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              <Menu className="h-8 w-8 text-[#1d5c5c]" />
-            </button>
-          </div>
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            {mobileMenuOpen ? <X className="h-8 w-8 text-[#1d5c5c]" /> : <Menu className="h-8 w-8 text-[#1d5c5c]" />}
+          </button>
         </div>
-          </div>
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="bg-white shadow-md text-center p-4 space-y-4">
+          <div className="absolute left-0 top-full w-full bg-white shadow-md text-center p-4 space-y-4 z-50">
             {menuItems.map((item) =>
               item === "Services" ? (
                 <div key={item} className="relative">
                   <button
-                    className=" w-full text-sm font-medium flex justify-center items-center gap-1 hover:text-[#1d5c5c]"
+                    className="w-full text-sm font-medium flex justify-center items-center gap-1 hover:text-[#1d5c5c]"
                     onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
                   >
                     {item} <ChevronDown className={`h-4 w-4 ${mobileDropdownOpen ? "rotate-180" : ""}`} />
