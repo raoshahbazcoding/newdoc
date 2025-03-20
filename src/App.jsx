@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Services from "./components/Services"
 import EmergencyRepairs from "./components/EmergencyRepairs"
-// import WhyChooseUs from "./components/WhyChooseUs"
 import ShareStory from "./components/ShareStory"
 import Testimonials from "./components/Testimonials"
 import OurTeam from "./components/OurTeam"
@@ -11,6 +10,7 @@ import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Footer from "./components/Footer"
 import ServicesSection from "./components/PartnerLogos"
+import WhyChooseUs from "./components/WhyChooseUs"
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       <Services />
       <ShareStory />
       <Testimonials />
-      {/* <WhyChooseUs /> */}
+      <WhyChooseUs />
       <OurTeam />
       <EmergencyRepairs />
       <ContactUs />
