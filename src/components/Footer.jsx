@@ -50,7 +50,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4 text-sm">
               <li className="flex items-center space-x-2">
-                <Map className="h-6 w-6 " />
+                <Map className="h-5 w-5 md:h-6 md:w-6 " />
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
               </li>
               <li className="flex items-center space-x-2">
