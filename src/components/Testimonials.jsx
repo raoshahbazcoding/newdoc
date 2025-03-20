@@ -55,7 +55,7 @@ export default function ClientTestimonials() {
         {testimonials.map((testimonial, index) => (
           <div
             key={testimonial.id}
-            className={`relative flex-1 bg-[#e0f2ed] rounded-lg p-6 pt-12 mt-12 transition-all duration-500 hover:shadow-2xl ${
+            className={`relative flex-1 bg-[#e0f2ed] rounded-lg p-6 pt-12 mt-12 transition-all duration-100 hover:shadow-2xl ${
               activeIndex === index ? "opacity-100 scale-105" : "opacity-70 scale-95"
             }`}
           >
