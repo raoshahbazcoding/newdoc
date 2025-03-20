@@ -21,9 +21,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-8  md:px-1 text-left relative z-10 text-white md:text-left">
-        <div className="max-w-4xl">
+        <div className="max-w-3xl">
           {/* Title */}
-          <h1 className="text-3xl font-newyork md:text-2xl lg:text-7xl font-light mb-6">
+          <h1 className="text-3xl  md:text-3xl lg:text-7xl font-light mb-6">
             We Provide <span className="text-[#40E0D0]">Dentist</span> Service
           </h1>
 
