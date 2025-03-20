@@ -70,12 +70,12 @@ export default function AboutUs() {
                 </a>
                 <a
                   href="#"
-                  className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-6 py-3 uppercase flex items-center"
+                  className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-6 py-3 uppercase flex items-center hover:bg-[#339485] hover:text-white "
                 >
-                  <img src={call} alt="call" />
+                  <img src={call} alt="call" className=" hover:text-whit"/>
                   <span className=" font-semibold px-2 tex-xl  ">
                     
-                    CALL +92 123 456 0939
+                   +92 123 456 0939
                   </span>
                 </a>
               </div>

@@ -19,7 +19,7 @@ export default function ContactUs() {
             </p>
             <a
               href="/appointment"
-              className="bg-[#1D5C5C] text-white px-6 py-3 inline-block uppercase rounded-md shadow-md hover:bg-[#174a4a] transition"
+              className="bg-[#1D5C5C] text-white px-6 py-3 inline-block uppercase  shadow-md hover:bg-[#174a4a] transition"
             >
               GET APPOINTMENT
             </a>

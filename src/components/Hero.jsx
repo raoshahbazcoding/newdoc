@@ -93,7 +93,7 @@ export default function Hero() {
       </div>
 
       {/* Fixed Get Appointment Sidebar */}
-      <div className="fixed right-5 top-1/2 transform -translate-y-1/2 z-50 hidden md:block">
+      <div className="fixed right-5 top-[40%] transform -translate-y-1/2 z-50 hidden md:block">
         <div className="bg-[#37FFDB] text-[#1d5c5c] font-bold py-5 px-8 rounded rotate-[-90deg] origin-right whitespace-nowrap">
           GET APPOINTMENT
         </div>
