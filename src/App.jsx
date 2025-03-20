@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <Hero />
+      <Hero  />
       <AboutUs />
       <Services />
       <ShareStory />

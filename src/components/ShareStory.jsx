@@ -10,7 +10,7 @@ export default function ShareStory() {
         <div className="md:col-span-9 relative">
           <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
           <div
-            className="w-full h-[900px] bg-cover bg-center"
+            className="w-full h-[600px] bg-cover bg-center"
             style={{ backgroundImage: `url(${storyImg})` }}
           ></div>
 
