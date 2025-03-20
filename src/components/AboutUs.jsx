@@ -1,7 +1,7 @@
 const vector1 = "/Vector-1.png";
 const vector2 = "/Vector-2.png";
 const vector3 = "/vector-3.png";
-const about = "/ab.png";
+const about = "/doc-about-us.png";
 const call = "call.png";
 
 export default function AboutUs() {
