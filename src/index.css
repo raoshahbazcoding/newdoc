@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Nova';
-  src: url('./assets/fonts/Nova/proximanova_light.otf') format('truetype'); /* Update with your actual file */
+  src: url('./assets/fonts/Nova/proximanova_regular.ttf') format('truetype'); /* Update with your actual file */
   font-weight: normal;
   font-style: normal;
 }
@@ -21,6 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
-body, p, div {
+body, p, div button {
   font-family: 'Nova', sans-serif;
 }

@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 
-const hero = "/hero.png";
+// const hero = "/hero.png";
+const hero = "/hero-bg.jpg";
 const profile1 = "/profile1.png";
 const profile2 = "/profile4.png";
 const profile3 = "/profile3.png";
@@ -8,7 +9,7 @@ const clock = "/clock-hero.png";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-[700px] md:h-[800px] py-10 md:py-20">
+    <div className="relative w-full h-[900px] md:h-[920px] py-10 md:py-20">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0  ">
         <img

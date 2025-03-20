@@ -1,55 +1,54 @@
-
-const Counseling = "/Vector-service-1.png"
-const Facial = "/Facial.png"
-const Restorative = "/Restorative.png"
-const Dermal = "/Dermal.png"
-const General = "/General.png"
-const Arrows = "/Arrow.png"
-
+const Counseling = "/Vector-service-1.png";
+const Facial = "/Facial.png";
+const Restorative = "/Restorative.png";
+const Dermal = "/Dermal.png";
+const General = "/General.png";
+const Arrows = "/Arrow.png";
 
 export default function Services() {
   const services = [
     {
-      icon: <img src={Counseling} alt="Counseling"  />,
+      icon: <img src={Counseling} alt="Counseling" />,
       title: "Counseling",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power..",
+        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
     },
     {
       icon: <img src={Facial} alt="Facial Aesthetic" />,
       title: "Facial Aesthetic",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power..",
+        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
     },
     {
       icon: <img src={Restorative} alt="Restorative Dentist" />,
       title: "Restorative Dentist",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power..",
+        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
     },
     {
       icon: <img src={Dermal} alt="Dermal Facial Fillers" />,
       title: "Dermal Facial Fillers",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power..",
+        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
     },
     {
-      icon:  <img src={General} alt="GeneralPreventative" />,
+      icon: <img src={General} alt="General Preventative" />,
       title: "General Preventative",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power..",
+        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
     },
     {
       icon: <img src={Counseling} alt="Counseling" />,
       title: "Counseling",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power..",
+        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
     },
-  ]
+  ];
 
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
+        {/* Section Heading */}
         <div className="text-center mb-4">
           <p className="text-lg">What can we offer you?</p>
         </div>
@@ -57,15 +56,27 @@ export default function Services() {
           Wide range of <span className="text-[#1d5c5c]">Dental Services</span>
         </h2>
 
+        {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div  key={index} className={`p-8 ${index === 3 ? "bg-white shadow-2xl z-15 -mt-4  " : ""},${index === 1 ? "bg-white shadow-2xl z-15 -mt-4" : ""},${index === 5 ? "bg-white shadow-2xl z-15 -mt-4" : ""}`}>
-
-              <div className="bg-[#225555]  p-4 inline-block rounded mb-4">{service.icon}</div>
+            <div
+              key={index}
+              className={`group p-8 transition-all duration-300 ${
+                index === 3 || index === 1 || index === 5
+                  ? "bg-white shadow-2xl z-15 -mt-4"
+                  : "hover:shadow-2xl"
+              }`}
+            >
+              {/* Icon */}
+              <div className="bg-[#225555] p-4 inline-block rounded mb-4">
+                {service.icon}
+              </div>
+              {/* Title */}
               <h3 className="text-xl font-light mb-4">{service.title}</h3>
+              {/* Description */}
               <p className="text-sm text-gray-600 mb-4">{service.description}</p>
 
-              {/* giving Arrow */}
+              {/* Arrow Link */}
               <a href="#" className="inline-flex items-center">
                 <img src={Arrows} alt="arrow" />
               </a>
@@ -73,6 +84,7 @@ export default function Services() {
           ))}
         </div>
 
+        {/* View All Services Button */}
         <div className="text-center mt-16">
           <a href="#" className="bg-[#1d5c5c] text-white px-8 py-4 inline-block uppercase">
             VIEW ALL SERVICES
@@ -80,6 +92,5 @@ export default function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
