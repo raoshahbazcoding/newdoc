@@ -51,14 +51,14 @@ export default function Partners() {
           }}
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[#1D5C5C] opacity-80"></div>
+          <div className="absolute inset-0 bg-[#1D5C5C] opacity-91"></div>
 
           {/* Scrolling Logos */}
           <div
             ref={scrollRef}
             className="relative z-10 flex items-center gap-16 whitespace-nowrap overflow-hidden w-full"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+            onMouseEnter={() => setIsHovered(false)}
+            onMouseLeave={() => setIsHovered(true)}
           >
             {/* Duplicate logos for seamless looping */}
             {logos.concat(logos).map((logo, index) => (
