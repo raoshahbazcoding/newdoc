@@ -66,20 +66,20 @@ export default function Footer() {
             <h3 className="text-xl mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPinCheck className="h-10 w-10"/>
+                <MapPinCheck className="h-12 w-8"/>
                 <span className="ml-2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utelit tellus, luctus</span>
               </li>
               <li className="flex items-center">
-                <Contact />
+                <Contact className="h-6 w-5" />
                 <span className="ml-2">contact@citydentalclinic.com</span>
               </li>
               <li className="flex items-center">
-               <Phone />
+               <Phone className="h-6 w-5" />
                 <span className="ml-2">+02 9184 0851</span>
               </li>
               <li className="flex items-center">
                 
-                 <Globe />
+                 <Globe className="h-6 w-5" />
                 <span className="ml-2">www.citydentalclinic.com</span>
               </li>
             </ul>
