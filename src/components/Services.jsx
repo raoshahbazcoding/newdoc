@@ -61,7 +61,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group p-8 transition-all duration-300 shadow-2xl md:shadow-none md:hover:shadow-2xl"
+              className="group p-8   shadow-2xl  rounded-lg"
             >
               {/* Icon */}
               <div className="bg-[#225555] p-4 inline-block rounded mb-4">
