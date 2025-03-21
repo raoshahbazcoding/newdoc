@@ -37,7 +37,7 @@ export default function ContactUs() {
       </div>
 
       {/* THis IS For mobile */}
-      <div className="container mx-auto px-4 md:hidden">
+      <div className="container mx-auto px-4 md:hidden mb-10">
         {/* Right Image - Doctor Overlapping Properly */}
         <div className="flex justify-center items-center" >
             <img
