@@ -36,7 +36,7 @@ export default function Navbar() {
   return (
     <>
       {/* Contact Info Section */}
-      <div className="w-full border-b border-gray-300 bg-[#f8f8f8]">
+      <div className="w-full border-b border-gray-300 bg-[#f5f5f5]">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-2">
           {/* Logo */}
           <a href="/" className="hidden md:block">
@@ -63,7 +63,7 @@ export default function Navbar() {
       </div>
 
       {/* Navigation Section */}
-      <div className="w-full py-2 sticky top-0 z-50 bg-white shadow-md">
+      <div className="w-full py-2 sticky top-0 z-50 bg-[#f5f5f5] shadow-md">
         <div className="container mx-auto px-4 flex justify-between items-center py-4">
           {/* Logo (Visible on Mobile) */}
           <a href="/" className="md:hidden">
