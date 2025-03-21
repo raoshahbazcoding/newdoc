@@ -1,4 +1,4 @@
-import { Twitter, Instagram, Contact, Map, Globe, Phone, ChevronRight } from "lucide-react";
+import { Twitter, Instagram, Contact, MapPin, Globe, Phone, ChevronRight } from "lucide-react";
 
 const logo = "/footer.png";
 const fb = "/fb.png";
@@ -13,10 +13,10 @@ export default function Footer() {
             <a href="/" className="inline-block mb-6">
               <img src={logo} alt="City Dental Care" className="h-auto w-[180px] hidden md:block" />
             </a>
-            <p className="text-sm mb-6 leading-relaxed">
+            <p className=" mb-6 leading-relaxed">
               At City Dental Clinic, our mission is to enhance your denture experience by providing excellent denture care.
             </p>
-            <a href="#" className="flex font-semibold items-center text-sm uppercase text-[#A3DAEC] hover:underline">
+            <a href="#" className="flex font-semibold items-center text-sm uppercase  hover:underline">
               MORE ABOUT <ChevronRight className="ml-2 h-4 w-4" />
             </a>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="space-y-4">
               {["Home", "About", "Services", "For Patients", "Contact"].map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="flex items-center hover:text-[#A3DAEC] transition">
+                  <a href="#" className="flex items-center hover:underline transition">
                     <ChevronRight className="mr-2 h-4 w-4" /> {item}
                   </a>
                 </li>
@@ -38,7 +38,7 @@ export default function Footer() {
           {/* Working Hours */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Working Time</h3>
-            <ul className="space-y-4 text-sm">
+            <ul className="space-y-4 ">
               <li>Monday-Friday: 8AM-8PM</li>
               <li>Saturday: 9AM-6PM</li>
               <li>Sunday: Closed</li>
@@ -48,9 +48,9 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
-            <ul className="space-y-4 text-sm">
+            <ul className="space-y-4 ">
               <li className="flex items-center space-x-2">
-                <Map className="h-5 w-5 md:h-6 md:w-6 " />
+                <MapPin className="h-5 w-5 md:h-7 md:w-7 " />
                 <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
               </li>
               <li className="flex items-center space-x-2">
@@ -88,7 +88,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="bg-[#173C3C] py-4 text-center text-sm">
+      <div className="bg-[#173C3C] py-4 text-center ">
         <div className="container mx-auto px-4">
           Copyright © 2025 Theme. All rights reserved. Powered by City Dental Clinic.
         </div>
