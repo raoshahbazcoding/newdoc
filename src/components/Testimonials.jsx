@@ -13,28 +13,31 @@ export default function ClientTestimonials() {
     { id: 3, name: "Latoya Brown", role: "Software Engineer", testimonial: "The entire team was friendly and made sure I was at ease throughout the treatment.", image: cl1 },
     { id: 4, name: "Emma Johnson", role: "Marketing Specialist", testimonial: "Highly recommended! The experience was smooth, and the team was very professional.", image: cl2 },
     { id: 5, name: "James Smith", role: "Project Manager", testimonial: "Very satisfied with the service! The attention to detail was impressive.", image: cl1 },
+    { id: 6, name: "Sophia Martinez", role: "Graphic Designer", testimonial: "Excellent service and a friendly team!", image: cl2 },
   ];
 
-  // Auto-slide for mobile view
+  const totalGroups = Math.ceil(testimonials.length / 3); // Groups of 3
+
+  // Auto-slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % testimonials.length);
+      setActiveIndex((prev) => (prev + 3) % testimonials.length);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="h-auto mb-16 mt-16 md:mt-5 md:mb-10 w-full max-w-7xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
-      <h2 className="text-4xl md:text-5xl font-light text-center mb-12">
+    <div className="h-auto mb-16 mt-16 md:mt-10 md:mb-10 w-full max mx-auto px-4 py-16 flex flex-col items-center justify-center">
+      <h2 className="text-4xl py-10 md:text-5xl  text-center mb-12">
         What Our Clients Say
       </h2>
 
-      {/* Carousel - Display 3 Items at the Same Time */}
-      <div className="flex flex-col md:flex-row justify-center gap-6">
+      {/* Carousel - Always Show Exactly 3 Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1500px]">
         {testimonials.slice(activeIndex, activeIndex + 3).map((testimonial) => (
           <div
             key={testimonial.id}
-            className="relative flex-1 bg-[#e0f2ed] rounded-lg p-6 pt-16 pb-10 transition-all duration-300 hover:shadow-2xl min-h-[250px]"
+            className="relative bg-[#e0f2ed] rounded-lg p-6 pt-16 pb-10 transition-all duration-300 hover:shadow-2xl min-h-[250px]"
           >
             {/* Profile Image */}
             <div className="absolute -top-12 left-1/2 transform -translate-x-1/2">
@@ -55,13 +58,15 @@ export default function ClientTestimonials() {
         ))}
       </div>
 
-      {/* Navigation Dots (Only Visible on Desktop) */}
+      {/* Navigation Dots - One Dot Per 3 Cards */}
       <div className="hidden md:flex justify-center gap-4 mt-12">
-        {testimonials.map((_, index) => (
+        {[...Array(totalGroups)].map((_, groupIndex) => (
           <button
-            key={index}
-            onClick={() => setActiveIndex(index)}
-            className={`transition-all duration-300 ${activeIndex === index ? "text-[#1d5c5c]" : "text-gray-400"}`}
+            key={groupIndex}
+            onClick={() => setActiveIndex(groupIndex * 3)}
+            className={`transition-all duration-300 ${
+              Math.floor(activeIndex / 3) === groupIndex ? "text-[#1d5c5c]" : "text-gray-400"
+            }`}
           >
             <Circle size={12} />
           </button>

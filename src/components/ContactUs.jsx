@@ -2,7 +2,7 @@ const contact = "/contact.png";
 
 export default function ContactUs() {
   return (
-    <section className="py-8 md:py-30">
+    <section className="py-8 mt-17 md:py-30">
       <div className="container mx-auto px-4">
         <div className="bg-[#E8F4F4] flex flex-col md:flex-row items-center rounded-lg relative ">
           {/* Left Content */}

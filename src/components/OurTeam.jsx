@@ -24,6 +24,7 @@ const teamMembers = [
     role: "Registered Mental Health",
     image: doc2,
   },
+  
 ];
 
 const OurTeam = () => {
@@ -36,7 +37,7 @@ const OurTeam = () => {
         </p>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto  ">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-[1500px] mx-auto  ">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-gray-50 rounded-lg shadow-lg overflow-hidden text-center">
             <img
