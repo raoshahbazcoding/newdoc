@@ -23,7 +23,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-[25px] -font-semibold mb6">Quick Links</h3>
+            <h3 className="text-[25px] -font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
               {["Home", "About", "Services", "For Patients", "Contact"].map((item, index) => (
                 <li key={index}>
