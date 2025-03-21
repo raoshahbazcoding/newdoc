@@ -26,7 +26,7 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-5 md:py-5 bg-white">
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4">
