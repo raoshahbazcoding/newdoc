@@ -1,6 +1,6 @@
 import { Twitter, Instagram,Facebook , Contact, MapPin, Globe, Phone, ChevronRight } from "lucide-react";
 
-const logo = "/hd-logo.svg";
+const logo = "/Footer-logoo.svg";
 // const fb = "/fb.png";
 
 export default function Footer() {
@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div>
             <a href="/" className="inline-block mb-6">
-              <img src={logo} alt="City Dental Care" className="h-auto w-[180px] " />
+              <img src={logo} alt="City Dental Care" className="h-auto w-[140px] " />
             </a>
             <p className=" mb-6 leading-relaxed">
               At City Dental Clinic, our mission is to enhance your denture experience by providing excellent denture care.

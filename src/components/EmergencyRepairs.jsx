@@ -9,7 +9,7 @@ export default function EmergencyRepairs() {
 {/* bg Image */}
      {/* Background Image with Dark Overlay */}
         <div
-          className="w-full h-[600px] bg-cover bg-center"
+          className="w-full h-[450px] bg-cover bg-center"
         >
 
         </div>

@@ -46,7 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="pb-8 md:py-10">
+    <section className="pb-8 mb-1 md:mb-6 md:py-10">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-4">
