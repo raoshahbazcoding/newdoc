@@ -1,4 +1,4 @@
-import { Star,CalendarCheck ,Clock1    } from "lucide-react";
+import { Star, CalendarCheck, Clock1 } from "lucide-react";
 
 const hero = "/bg-hero.png";
 const profile1 = "/profile1.png";
@@ -7,8 +7,7 @@ const profile3 = "/profile3.png";
 
 export default function Hero() {
   return (
-    <div className=" relative w-full min-h-[600px] md:min-h-[800px]  flex flex-col justify-center items-center">
-      {/* w-full max-w-[1500px] mx-auto px-8 md:px-1 text-left relative z-10 text-white */}
+    <div className="relative w-full min-h-[600px] md:min-h-[800px] flex flex-col justify-center items-center">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <div
@@ -19,11 +18,11 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="container mx-auto px-8  md:px-1 text-left relative z-10 text-white md:text-left">
+      {/* Content Wrapper */}
+      <div className="container mx-auto px-4 md:px-6 text-left relative z-10 text-white">
         <div className="max-w-3xl">
           {/* Title */}
-          <h1 className="text-3xl  md:text-3xl lg:text-7xl font-light mb-6">
+          <h1 className="text-5xl md:text-3xl lg:text-7xl font-light mb-6">
             We Provide <span className="text-[#40E0D0]">Dentist</span> Service
           </h1>
 
@@ -56,17 +55,17 @@ export default function Hero() {
               <img
                 src={profile1}
                 alt="User"
-                className="w-[60px] h-[60px] hidden md:block rounded-full border-0.5 border-white"
+                className="w-[60px] h-[60px] hidden md:block rounded-full border border-white"
               />
               <img
                 src={profile2}
                 alt="User"
-                className="w-[60px] h-[60px] hidden md:block rounded-full border-0.5 border-white"
+                className="w-[60px] h-[60px] hidden md:block rounded-full border border-white"
               />
               <img
                 src={profile3}
                 alt="User"
-                className="w-[60px] h-[60px] hidden md:block rounded-full border-0.5 border-white"
+                className="w-[60px] h-[60px] hidden md:block rounded-full border border-white"
               />
             </div>
             <div>
@@ -94,17 +93,16 @@ export default function Hero() {
 
       {/* Fixed Get Appointment Sidebar */}
       <div className="fixed right-5 top-[40%] transform -translate-y-1/2 z-50 hidden md:block">
-        <div className="bg-[#37FFDB] text-[#1D5C5C]  flex flex-wrap font-bold py-5 px-8 rounded rotate-[-90deg] origin-right whitespace-nowrap">
-         
-         <CalendarCheck  className="w-8 h-6 "/>
-          <span className="font-bold ml-2" >GET APPOINTMENT</span>
+        <div className="bg-[#37FFDB] text-[#1D5C5C] flex flex-wrap font-bold py-5 px-8 rounded rotate-[-90deg] origin-right whitespace-nowrap">
+          <CalendarCheck className="w-8 h-6" />
+          <span className="font-bold ml-2">GET APPOINTMENT</span>
         </div>
       </div>
 
       {/* Mobile Get Appointment Sidebar */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 md:hidden">
         <div className="bg-[#37FFDB] py-3 px-3 rounded rotate-[-90deg] origin-right whitespace-nowrap">
-         <Clock1  className="text-[#1D5C5C]"/>
+          <Clock1 className="text-[#1D5C5C]" />
         </div>
       </div>
     </div>

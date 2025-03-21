@@ -36,15 +36,15 @@ export default function Navbar() {
   return (
     <>
       {/* Contact Info Section */}
-      <div className="w-full border-b border-gray-300">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-2  ">
+      <div className="w-full border-b border-gray-300 bg-[#f8f8f8]">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-2">
           {/* Logo */}
           <a href="/" className="hidden md:block">
-            <img src={logo} alt="City Dental Care" className="w-[100px] md:w-[120px] lg:w-[120px] h-auto" />
+            <img src={logo} alt="City Dental Care" className="w-[120px] h-auto" />
           </a>
 
           {/* Contact Details */}
-          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0 md:text-left">
+          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
             {[
               { icon: <Clock className="text-white h-5 w-5" />, label: "Opening Time", value: "Mon - Fri 8AM - 7PM" },
               { icon: <Phone className="text-white h-5 w-5" />, label: "Phone", value: "+0800 2336 7811" },
@@ -64,7 +64,7 @@ export default function Navbar() {
 
       {/* Navigation Section */}
       <div className="w-full py-2 sticky top-0 z-50 bg-white shadow-md">
-        <div className="container mx-auto flex justify-between items-center py-4 px-4 md:px-6">
+        <div className="container mx-auto px-4 flex justify-between items-center py-4">
           {/* Logo (Visible on Mobile) */}
           <a href="/" className="md:hidden">
             <img src={logo} alt="City Dental Care" className="w-[80px] h-auto" />
