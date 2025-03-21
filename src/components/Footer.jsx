@@ -55,20 +55,20 @@ export default function Footer() {
               </li> */}
               <li className="flex items-center space-x-2">
                 <MapPin className="h-5 w-5 " />
-                <span>Address: 9 Earl Grey St <br /> Edinburgh EH3 9BN <br /> United Kingdom</span>
+                <span>9 Earl Grey St , <br /> Edinburgh  EH3 9BN  United Kingdom</span>
                
               </li>
               <li className="flex items-center space-x-2">
                 <Contact className="h-5 w-5 " />
-                <span>contact@citydentalclinic.com</span>
+                <span>info@citydentalcare.co.uk</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-5 w-5 " />
-                <span>+02 9184 0851</span>
+                <span>01312282442</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Globe className="h-5 w-5 " />
-                <span>www.citydentalclinic.com</span>
+                <span>https://citydentalcare.co.uk/</span>
               </li>
             </ul>
 
