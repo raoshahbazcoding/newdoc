@@ -24,7 +24,7 @@ export default function ClientTestimonials() {
   }, []);
 
   return (
-    <div className="h-auto mb-16 mt-16 md:mt-10 md:mb-10 w-full max-w-7xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
+    <div className="h-auto mb-16 mt-16 md:mt-5 md:mb-10 w-full max-w-7xl mx-auto px-4 py-16 flex flex-col items-center justify-center">
       <h2 className="text-4xl md:text-5xl font-light text-center mb-12">
         What Our Clients Say
       </h2>
