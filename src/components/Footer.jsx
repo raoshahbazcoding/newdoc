@@ -1,7 +1,7 @@
-import { Twitter, Instagram, Contact, MapPin, Globe, Phone, ChevronRight } from "lucide-react";
+import { Twitter, Instagram,Facebook , Contact, MapPin, Globe, Phone, ChevronRight } from "lucide-react";
 
-const logo = "/footer.png";
-const fb = "/fb.png";
+const logo = "/hd-logo.svg";
+// const fb = "/fb.png";
 
 export default function Footer() {
   return (
@@ -75,7 +75,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 mt-8">
               {[
-                { icon: fb, link: "#" },
+                { icon: <Facebook  className="h-4 w-4" />, link: "#" },
                 { icon: <Twitter className="h-4 w-4" />, link: "#" },
                 { icon: <Instagram className="h-4 w-4" />, link: "#" },
               ].map((item, index) => (

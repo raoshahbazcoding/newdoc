@@ -1,7 +1,7 @@
 import { Clock, Phone, MapPin, Menu, ChevronDown, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const logo = "/logo3.png";
+const logo = "/hd-logo.svg";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
