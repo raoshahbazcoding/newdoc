@@ -27,7 +27,7 @@ export default function ClientTestimonials() {
   }, []);
 
   return (
-    <div className="h-auto mb-16 mt-16 md:mt-10 md:mb-10 w-full max mx-auto px-4 py-16 flex flex-col items-center justify-center">
+    <div className="h-auto mb-16  md:mb-10 w-full max mx-auto px-4 py-16 flex flex-col items-center justify-center">
       <h2 className="text-4xl py-10 md:text-5xl  text-center mb-12">
         What Our Clients Say
       </h2>
@@ -47,8 +47,8 @@ export default function ClientTestimonials() {
             </div>
 
             {/* Testimonial Content */}
-            <div className="mt-14 px-4 text-center">
-              <p className="text-gray-800 mb-6 text-sm md:text-base leading-relaxed">
+            <div className=" px-4 text-center">
+              <p className="text-gray-800 mb-6  text-sm md:text-base leading-relaxed">
                 {testimonial.testimonial}
               </p>
               <p className="text-lg font-medium text-gray-900">{testimonial.name}</p>
