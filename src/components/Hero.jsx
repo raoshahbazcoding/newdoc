@@ -36,13 +36,13 @@ export default function Hero() {
           <div className="flex flex-col md:flex-row gap-4 mb-16">
             <a
               href="#"
-              className="bg-[#225555] border border-[#225555] text-white px-8 py-4 text-center uppercase font-semibold"
+              className="bg-[#225555] border border-[#225555] text-white px-8 py-4 text-center uppercase "
             >
               GET APPOINTMENT
             </a>
             <a
               href="#"
-              className="bg-transparent border-[2px] border-[#319684] text-white px-8 py-4 text-center uppercase font-semibold hover:bg-white hover:text-[#003B3B] transition"
+              className="bg-transparent border-[2px] border-[#319684] text-white px-8 py-4 text-center uppercase  hover:bg-white hover:text-[#003B3B] transition"
             >
               VIEW OUR SERVICES
             </a>
@@ -95,7 +95,7 @@ export default function Hero() {
       <div className="fixed right-5 top-[40%] transform -translate-y-1/2 z-50 hidden md:block">
         <div className="bg-[#37FFDB] text-[#1D5C5C] flex flex-wrap font-bold py-5 px-8 rounded rotate-[-90deg] origin-right whitespace-nowrap">
           <CalendarCheck className="w-8 h-6" />
-          <span className="font-bold ml-2">GET APPOINTMENT</span>
+          <span className=" ml-2">GET APPOINTMENT</span>
         </div>
       </div>
 

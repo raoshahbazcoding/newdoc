@@ -46,8 +46,8 @@ export default function Navbar() {
           {/* Contact Details */}
           <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
             {[
-              { icon: <Clock className="text-white h-5 w-5" />, label: "Opening Time", value: "Mon - Fri 8AM - 7PM" },
-              { icon: <Phone className="text-white h-5 w-5" />, label: "Phone", value: "+0800 2336 7811" },
+              { icon: <Clock className="text-white h-3 w-3 md:h-5 md:w-5" />, label: "Opening Time", value: "Mon - Fri 8AM - 7PM" },
+              { icon: <Phone className="text-white h-3 w-3 md:h-5 md:w-5 " />, label: "Phone", value: "+0800 2336 7811" },
               { icon: <MapPin className="text-white h-5 w-5" />, label: "Location", value: "New York, W2 3XE", hidden: true },
             ].map((item, index) => (
               <div key={index} className={`flex items-center gap-2 ${item.hidden ? "hidden md:flex" : ""}`}>
@@ -90,8 +90,7 @@ export default function Navbar() {
                         <a
                           key={service}
                           href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:border-b-2 border-transparent hover:border-[#40E0D0]"
-                          onClick={() => setActiveMenu(item)}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                         >
                           {service}
                         </a>
@@ -126,25 +125,38 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="absolute left-0 top-full w-full bg-white shadow-md text-center p-4 space-y-4 z-50">
+        <div
+          className={`fixed inset-0 bg-black bg-opacity-60 transition-opacity ${
+            mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+          onClick={() => setMobileMenuOpen(false)}
+        ></div>
+
+        <div
+          className={`fixed top-0 right-0 w-3/4 h-full bg-white transform transition-transform ${
+            mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          } shadow-lg z-50 p-6`}
+        >
+          {/* Close Button */}
+          <button className="absolute top-4 right-4" onClick={() => setMobileMenuOpen(false)}>
+            <X className="h-8 w-8 text-[#1d5c5c]" />
+          </button>
+
+          {/* Mobile Menu Items */}
+          <nav className="mt-10 space-y-6">
             {menuItems.map((item) =>
               item === "Services" ? (
                 <div key={item} className="relative">
                   <button
-                    className="w-full text-sm font-medium flex justify-center items-center gap-1 hover:text-[#1d5c5c]"
+                    className="w-full text-left text-lg font-medium flex justify-between items-center hover:text-[#1d5c5c]"
                     onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
                   >
-                    {item} <ChevronDown className={`h-4 w-4 ${mobileDropdownOpen ? "rotate-180" : ""}`} />
+                    {item} <ChevronDown className={`h-6 w-6 ${mobileDropdownOpen ? "rotate-180" : ""}`} />
                   </button>
                   {mobileDropdownOpen && (
-                    <div className="mt-2 bg-gray-100 shadow-md rounded-md">
+                    <div className="mt-2 bg-gray-100 shadow-md rounded-md p-2">
                       {serviceItems.map((service) => (
-                        <a
-                          key={service}
-                          href={`/services/${service.toLowerCase().replace(/\s+/g, "-")}`}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200"
-                        >
+                        <a key={service} href={`/services/${service.toLowerCase()}`} className="block p-2 hover:bg-gray-200">
                           {service}
                         </a>
                       ))}
@@ -152,21 +164,13 @@ export default function Navbar() {
                   )}
                 </div>
               ) : (
-                <a
-                  key={item}
-                  href={`/${item.toLowerCase().replace(/\s+/g, "")}`}
-                  className="block text-sm font-medium hover:text-[#1d5c5c]"
-                  onClick={() => setActiveMenu(item)}
-                >
+                <a key={item} href={`/${item.toLowerCase()}`} className="block text-lg font-medium hover:text-[#1d5c5c]">
                   {item}
                 </a>
               )
             )}
-            <a href="#" className="block bg-[#1d5c5c] text-white px-6 py-3 text-sm font-medium uppercase text-center">
-              GET APPOINTMENT
-            </a>
-          </div>
-        )}
+          </nav>
+        </div>
       </div>
     </>
   );
