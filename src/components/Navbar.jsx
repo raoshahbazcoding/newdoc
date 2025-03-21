@@ -37,7 +37,7 @@ export default function Navbar() {
     <>
       {/* Contact Info Section */}
       <div className="w-full border-b border-gray-300">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-2 px-4 md:px-6">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-2  ">
           {/* Logo */}
           <a href="/" className="hidden md:block">
             <img src={logo} alt="City Dental Care" className="w-[100px] md:w-[120px] lg:w-[120px] h-auto" />

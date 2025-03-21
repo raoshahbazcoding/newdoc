@@ -29,15 +29,15 @@ const teamMembers = [
 
 const OurTeam = () => {
   return (
-    <div className="  mb-30 bg-white  flex flex-col items-center justify-center  " >
+    <div className="   mb-30 bg-white    " >
       <div className="text-center">
-        <h2 className="text-4xl font-bold text-gray-900">Our Team</h2>
+        <h2 className="text-4xl font-bold text-gray-900 mb-10">Our Team</h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           Our dedicated team of mental health professionals is committed to providing personalized care, guidance, and support. With a compassionate approach and evidence-based techniques.
         </p>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-[1500px] mx-auto  ">
+      <div className="container  mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mx-auto  ">
         {teamMembers.map((member, index) => (
           <div key={index} className="bg-gray-50 rounded-lg shadow-lg overflow-hidden text-center">
             <img

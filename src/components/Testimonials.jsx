@@ -27,13 +27,13 @@ export default function ClientTestimonials() {
   }, []);
 
   return (
-    <div className="h-auto mb-16  md:mb-10  max mx-auto px-4 py-16 flex flex-col items-center justify-center">
+    <div className=" container h-auto mb-16  md:mb-10 w-full max mx-auto px-4 py-16 flex flex-col items-center justify-center">
       <h2 className="text-4xl py-10 md:text-5xl  text-center mb-12">
         What Our Clients Say
       </h2>
 
       {/* Carousel - Always Show Exactly 3 Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1500px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
         {testimonials.slice(activeIndex, activeIndex + 3).map((testimonial) => (
           <div
             key={testimonial.id}
