@@ -63,7 +63,7 @@ export default function Services() {
               key={index}
               className={`group p-8 transition-all duration-300 ${
                 index === 3 || index === 1 || index === 5
-                  ? "bg-white shadow-2xl z-15 -mt-4"
+                  ? "bg-white shadow-2xl z-15 "
                   : "hover:shadow-2xl"
               }`}
             >
