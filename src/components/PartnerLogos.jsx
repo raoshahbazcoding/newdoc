@@ -47,7 +47,7 @@ export default function Partners() {
     if (!mobileContainer) return;
 
     let scrollAmount = 0;
-    const scrollSpeed = 1; 
+    const scrollSpeed = 0.8; 
     const maxScroll = mobileContainer.scrollWidth / 2;
 
     const scroll = () => {
