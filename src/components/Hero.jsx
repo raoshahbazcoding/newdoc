@@ -7,7 +7,8 @@ const profile3 = "/profile3.png";
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[600px] md:min-h-[800px]  flex flex-col justify-center items-center">
+    <div className=" relative w-full min-h-[600px] md:min-h-[800px]  flex flex-col justify-center items-center">
+      {/* w-full max-w-[1500px] mx-auto px-8 md:px-1 text-left relative z-10 text-white */}
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <div
