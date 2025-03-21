@@ -46,7 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="pb-8 md:py-10 ">
+    <section className="pb-8 md:py-10">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-4">
@@ -61,11 +61,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group p-8 transition-all duration-300 ${
-                index === 3 || index === 1 || index === 5
-                  ? "bg-white shadow-2xl z-15 "
-                  : "hover:shadow-2xl"
-              }`}
+              className="group p-8 transition-all duration-300 shadow-2xl md:shadow-none md:hover:shadow-2xl"
             >
               {/* Icon */}
               <div className="bg-[#225555] p-4 inline-block rounded mb-4">
