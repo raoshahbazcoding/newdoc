@@ -39,24 +39,23 @@ export default function Partners() {
   }, [isHovered]);
 
   return (
-    <div>
-      {/* Desktop Carousel */}
-      <div className="hidden md:block">
-        <section
-          className="relative w-full flex items-center h-[300px] justify-center py-16 overflow-hidden"
-          style={{
-            backgroundImage: `url(${bg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[#1D5C5C] opacity-91"></div>
+    <div className="relative w-full">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-[#1D5C5C] opacity-91"></div>
+      </div>
 
-          {/* Scrolling Logos */}
+      {/* Content Wrapper */}
+      <div className="relative container mx-auto py-16">
+        {/* Desktop Carousel */}
+        <div className="hidden md:block">
           <div
             ref={scrollRef}
-            className="relative z-10 flex items-center gap-16 whitespace-nowrap overflow-hidden w-full"
+            className="flex items-center gap-16 whitespace-nowrap overflow-hidden w-full"
             onMouseEnter={() => setIsHovered(false)}
             onMouseLeave={() => setIsHovered(true)}
           >
@@ -65,28 +64,13 @@ export default function Partners() {
               <img key={index} src={logo} alt={`Partner ${index}`} className="h-10 md:h-18" />
             ))}
           </div>
-        </section>
-      </div>
+        </div>
 
-      {/* Mobile Version */}
-      <div className="md:hidden">
-        <section
-          className="relative w-full flex h-[200px] items-center justify-center"
-          style={{
-            backgroundImage: `url(${bg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[#1D5C5C] opacity-95"></div>
-
-          {/* Mobile Logos */}
-          <div className="relative z-10 flex justify-center gap-5">
-            <img src={logom1} alt="Pharmacy" className="h-15" />
-            <img src={logom2} alt="Healthcare" className="h-15" />
-          </div>
-        </section>
+        {/* Mobile Version */}
+        <div className="md:hidden flex justify-center gap-5">
+          <img src={logom1} alt="Pharmacy" className="h-15" />
+          <img src={logom2} alt="Healthcare" className="h-15" />
+        </div>
       </div>
     </div>
   );
