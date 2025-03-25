@@ -1,6 +1,3 @@
-// const vector1 = "/Vector-1.png";
-// const vector2 = "/Vector-2.png";
-// const vector3 = "/vector-3.png";
 const about = "/doc-about-us.png";
 import { PhoneCall,ShieldCheck ,Hospital ,HeartPulse   } from 'lucide-react';
 
@@ -8,21 +5,21 @@ export default function AboutUs() {
   const features = [
     {
       icon: <ShieldCheck className='h-8 w-8 text-[#3A6969] ' />,
-      title: "Trusted Physicians",
+      title: "Trusted Dental Experts in Edinburgh",
       description:
-        "Nascetur condimentum vivamus in consectetuer dictum ridiculus taciti.",
+        "We have trained experts who use personnel and modern tools so that you and your family get the proper dental treatment you deserve in the city of Edinburgh.",
     },
     {
       icon: <Hospital className='text-[#3A6969] h-8 w-8' />,
-      title: "Holistic Approach",
+      title: "Comprehensive and Affordable Dental Solutions",
       description:
-        "Nascetur condimentum vivamus in consectetuer dictum ridiculus taciti.",
+        "We aim to offer dental treatments for all clients, which may include general checkups, cleanings, and complex cosmetic dentistry.",
     },
     {
       icon: < HeartPulse  className='h-8 w-8 text-[#3A6969] ' />,
-      title: "Preventive Care",
+      title: "Caring for the Personalised Smile of Each Patient",
       description:
-        "Nascetur condimentum vivamus in consectetuer dictum ridiculus taciti.",
+        "From simple Invisalign treatments to an extreme smile makeover, the procedures that are followed depend on your requirements.",
     },
   ];
 
@@ -36,15 +33,15 @@ export default function AboutUs() {
             </div>
 
             <div>
-              <div className="uppercase text-[#1d5c5c] font-medium mb-4  ">
+              <h2 className="uppercase text-[#1d5c5c]  mb-4  ">
                 ABOUT US
-              </div>
-              <h2 className="text-4xl md:text-5xl font-light mb-6">
-                Transforming Lives, One Health Journey at a Time.
               </h2>
+              <h3 className="text-4xl md:text-5xl font-light mb-6">
+              Ready to Transform Your Smile?
+              </h3>
               <p className="text-gray-600 mb-8 w-[70%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              At City Dental Care in Edinburgh, we use the best services and technology in a friendly environment to enhance patient’s lives. We are a team of dentists with more than 20 years of experience and aim to ensure that every patient receives a comfortable dental experience, ranging from a simple examination to cosmetic surgery.
+
               </p>
 
               <div className="space-y-6 w-[70%]">
@@ -52,9 +49,9 @@ export default function AboutUs() {
                   <div key={index} className="flex gap-4">
                     <div className="bg-[#e8f4f4] p-4 h-fit">{feature.icon}</div>
                     <div>
-                      <h3 className="text-xl font-light mb-2">
+                      <h4 className="text-xl font-light mb-2">
                         {feature.title}
-                      </h3>
+                      </h4>
                       <p className="text-gray-500">{feature.description}</p>
                     </div>
                   </div>
@@ -64,9 +61,9 @@ export default function AboutUs() {
               <div className="flex gap-4 mt-8">
                 <a
                   href="#"
-                  className="bg-[#1d5c5c] text-white px-6 py-3 uppercase"
+                  className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase"
                 >
-                  GET APPOINTMENT
+                   Pain-Free Dentistry in Edinburgh – Book Now!
                 </a>
                 <a
                   href="#"
@@ -76,7 +73,7 @@ export default function AboutUs() {
                   <PhoneCall />
                   <span className=" font-semibold px-2 tex-xl  ">
                     
-                   +92 123 456 0939
+                  01312282442
                   </span>
                 </a>
               </div>
@@ -89,15 +86,14 @@ export default function AboutUs() {
         <div className="container mx-auto px-2">
           <div className="  items-center">
             <div>
-              <div className="uppercase text-[#1d5c5c] font-medium mb-4 text-center  ">
+              <h2 className="uppercase text-[#1d5c5c] font-medium mb-4 text-center  ">
                 ABOUT US
-              </div>
-              <h2 className="text-3xl text-center   font-light mb-6">
-                Transforming Lives, One Health Journey at a Time.
               </h2>
+              <h3 className="text-3xl text-center   font-light mb-6">
+              Ready to Transform Your Smile?
+              </h3>
               <p className="text-gray-600 text-center mb-8 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              At City Dental Care in Edinburgh, we use the best services and technology in a friendly environment to enhance patient’s lives. We are a team of dentists with more than 20 years of experience and aim to ensure that every patient receives a comfortable dental experience, ranging from a simple examination to cosmetic surgery.
               </p>
 
               {/* about us feutures  */}
@@ -112,9 +108,9 @@ export default function AboutUs() {
                     </div>
 
                     <div className="">
-                      <h3 className="text-xl text-center  font-light mb-2">
+                      <h4 className="text-xl text-center  font-light mb-2">
                         {feature.title}
-                      </h3>
+                      </h4>
                       <p className="text-gray-500 text-center">
                         {feature.description}
                       </p>
@@ -131,9 +127,9 @@ export default function AboutUs() {
               <div className="flex  flex-col gap-4 m-8 ">
                 <a
                   href="#"
-                  className="bg-[#1d5c5c] text-white px-4 py-3 uppercase text-center font-semibold"
+                  className="bg-[#1d5c5c] text-sm text-white px-4 py-2 uppercase text-center"
                 >
-                  GET APPOINTMENT
+                 Pain-Free Dentistry in Edinburgh – Book Now! 
                 </a>
                 <a
                   href="#"
@@ -143,7 +139,7 @@ export default function AboutUs() {
                   <PhoneCall />
                   <span className=" font-semibold px-2">
 
-                    +92 123 456 0939
+                  01312282442
                   </span>
                 </a>
               </div>

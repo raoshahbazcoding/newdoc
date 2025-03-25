@@ -30,10 +30,10 @@ const OurTeam = () => {
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center mb-4">
-          Our Team
+        Meet Our Expert Team
         </h2>
         <p className="text-center text-gray-500 max-w-2xl mx-auto">
-          Our dedicated team of mental health professionals is committed to providing personalized care, guidance, and support. With a compassionate approach and evidence-based techniques.
+        Our dental team at <strong>City Dental Care in Edinburgh</strong> offers high-quality services in Invisalign, cosmetic work, and general dentistry. For the last <strong>twenty years</strong>, our practice has been based on patients’ needs to provide a comfortable and efficient treatment process.
         </p>
 
         {/* Team Members Grid */}

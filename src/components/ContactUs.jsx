@@ -2,7 +2,7 @@ const contact = "/contact.png";
 
 export default function ContactUs() {
   return (
-    <section className="py-1 mt-10 md:py-30">
+    <section className="py-1 md:py-12 mb-10">
       <div className="container mx-auto px-4 hidden md:block">
         <div className="bg-[#E8F4F4] flex flex-col md:flex-row items-center rounded-lg relative ">
           {/* Left Content */}
@@ -11,17 +11,16 @@ export default function ContactUs() {
               CONTACT US
             </div>
             <h2 className="text-4xl md:text-5xl font-light mb-6 leading-tight">
-              Become The Next <br /> Our Happy Client
+            Contact City Dental Care Experts Today
             </h2>
             <p className="text-gray-700 mb-8">
-              If your dentures have broken, we endeavour to repair them ASAP,
-              often on the same day.
+            Our dental clinic in <strong>Edinburgh</strong> specialises in all types of dental treatments, including Invisalign and teeth-whitening options. Thanks to our expert team, our clinic at <strong>9 Earl Grey Street</strong> delivers superior dental services to patients in a comfortable environment.
             </p>
             <a
-              href="/appointment"
+              href="#"
               className="bg-[#1D5C5C] text-white px-6 py-3 inline-block uppercase  shadow-md hover:bg-[#174a4a] transition"
             >
-              GET APPOINTMENT
+              Have Questions? Contact Us Now!
             </a>
           </div>
 
@@ -53,18 +52,17 @@ export default function ContactUs() {
             <div className="uppercase text-[#1D5C5C] font-medium text-center mb-4">
               CONTACT US
             </div>
-            <h2 className="text-4xl  font-light mb-6 leading-tight">
-              Become The Next  Our Happy Client
+            <h2 className="text-4xl text-center font-light mb-6 leading-tight">
+            Contact City Dental Care Experts Today
             </h2>
-            <p className="text-gray-700 mb-8">
-              If your dentures have broken, we endeavour to repair them ASAP,
-              often on the same day.
+            <p className="text-gray-700 mb-8 text-center">
+            Our dental clinic in <strong>Edinburgh</strong> specialises in all types of dental treatments, including Invisalign and teeth-whitening options. Thanks to our expert team, our clinic at <strong>9 Earl Grey Street</strong> delivers superior dental services to patients in a comfortable environment.
             </p>
             <a
               href="#"
-              className="bg-[#1D5C5C] text-white px-6 py-3 inline-block uppercase  shadow-md hover:bg-[#174a4a] transition"
+              className="bg-[#1D5C5C] text-white px-8 py-2 text-sm text-center inline-block uppercase  shadow-md hover:bg-[#174a4a] transition"
             >
-              GET APPOINTMENT
+              Have Questions? Contact Us Now!
             </a>
           </div>
 

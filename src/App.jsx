@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Footer from "./components/Footer"
 import Partners from "./components/PartnerLogos"
+import FinanceSection from "./components/FinanceSection"
 // import WhyChooseUs from "./components/WhyChooseUs"
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       {/* <WhyChooseUs /> */}
       <OurTeam />
       <EmergencyRepairs />
+      <FinanceSection/>
       <ContactUs />
       <Partners />
       <LatestNews />

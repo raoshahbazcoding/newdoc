@@ -8,12 +8,12 @@ export default function ClientTestimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const testimonials = [
-    { id: 1, name: "Maryia Patupchyk", role: "Software Engineer", testimonial: "I had an outstanding experience with Dentist. His meticulous approach to prosthetic cosmetic dentistry truly sets him apart.", image: cl1 },
-    { id: 2, name: "Venessa Cardillo", role: "Sr. UX/UI Designer", testimonial: "I had an outstanding experience with Dentist. His meticulous approach to prosthetic cosmetic dentistry truly sets him apart.", image: cl2 },
-    { id: 3, name: "Latoya Brown", role: "Software Engineer", testimonial: "The entire team was friendly and made sure I was at ease throughout the treatment.", image: cl1 },
-    { id: 4, name: "Emma Johnson", role: "Marketing Specialist", testimonial: "Highly recommended! The experience was smooth, and the team was very professional.", image: cl2 },
-    { id: 5, name: "James Smith", role: "Project Manager", testimonial: "Very satisfied with the service! The attention to detail was impressive.", image: cl1 },
-    { id: 6, name: "Sophia Martinez", role: "Graphic Designer", testimonial: "Excellent service and a friendly team!", image: cl2 },
+    { id: 1, name: "Emma Stephon", testimonial: "I am glad to share that I have the best dentist ever. They did an amazing job. I love my new smile!’ I had an excellent experience at City Dental Care, and the Invisalign process was smooth and seamless. I highly recommend it!", image: cl1 },
+    { id: 2, name: "John Lary", testimonial: "Since my first visit, I have felt like family has surrounded me. The staff is friendly and qualified, and the work is of high quality. This was the best dental experience I’ve had!", image: cl2 },
+    { id: 3, name: "Sarah Evans", testimonial: "That could be due to the fact that as soon as I entered the premises, I was welcomed like one of the family. I must note that all staff members are professional, friendly, and prompt with their work.", image: cl1 },
+    { id: 4, name: "Michael Reid", testimonial: "With the help of City Dental Care, my smile became totally different. The staff's personalised approach is seen as a positive thing because it makes everyone feel like they are important.", image: cl2 },
+    { id: 5, name: "Lily Green", testimonial: "If I may say so, my cosmetic treatment experience was remarkable. The results exceeded my expectations!", image: cl1 },
+    { id: 6, name: "David Clark",  testimonial: "I wish I could give them six stars. It has been the most comfortable and best dental experience I have ever had.” Friendly staff, expert care, and a relaxing environment.", image: cl2 },
   ];
 
   const totalGroups = Math.ceil(testimonials.length / 3); // Groups of 3
@@ -27,10 +27,13 @@ export default function ClientTestimonials() {
   }, []);
 
   return (
-    <div className=" container h-auto w-full max mx-auto px-4 py-16 flex flex-col items-center justify-center">
-      <h2 className="text-4xl py-10 md:text-5xl  text-center mb-12">
-        What Our Clients Say
+    <div className=" container h-auto w-full max mx-auto px-4 py-8 flex flex-col items-center justify-center">
+      <h2 className="text-4xl py-10 md:text-5xl  text-center ">
+      What Do Our Patients Think?
       </h2>
+      <p className="mb-16 text-center px-2">
+      The real-life patient experiences and reviews demonstrate our dedication to delivering high-quality patient care. Our patients consistently validate the remarkable results and top-tier treatment they received at our facility for Invisalign and cosmetic procedures.
+      </p>
 
       {/* Carousel - Always Show Exactly 3 Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
@@ -48,11 +51,11 @@ export default function ClientTestimonials() {
 
             {/* Testimonial Content */}
             <div className=" px-4 text-center">
-              <p className="text-gray-800 mb-6  text-sm md:text-base leading-relaxed">
+              <q className="text-gray-800 mb-6 italic text-sm md:text-base leading-relaxed">
                 {testimonial.testimonial}
-              </p>
+              </q>
               <p className="text-lg font-medium text-gray-900">{testimonial.name}</p>
-              <p className="text-gray-700 text-sm">{testimonial.role}</p>
+              {/* <p className="text-gray-700 text-sm">{testimonial.role}</p> */}
             </div>
           </div>
         ))}

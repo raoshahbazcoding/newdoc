@@ -7,7 +7,7 @@ const profile3 = "/profile3.png";
 
 export default function Hero() {
   return (
-    <div className="relative w-full min-h-[600px] md:min-h-[800px] flex flex-col justify-center items-center">
+    <div className="relative w-full min-h-[800px] flex flex-col justify-center items-center">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <div
@@ -23,13 +23,12 @@ export default function Hero() {
         <div className="max-w-3xl">
           {/* Title */}
           <h1 className="text-5xl md:text-3xl lg:text-7xl font-light mb-6">
-            We Provide <span className="text-[#40E0D0]">Dentist</span> Service
+            Smile Brighter Today with <span className="text-[#40E0D0]">Edinburgh's</span>  Top Dentists
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg md:text-xl mb-10 max-w-2xl font-Nova">
-            We at Medicare are always fully focused on helping you to overcome
-            any Dentist procedure, with great commitment and easy recovery.
+          <p className="text-xl  mb-10 max-w-2xl font-Nova">
+          Welcome to City Dental Care Clinic in Edinburgh, which is fully equipped with state-of-the-art machines for patient comfort. We offer Invisalign treatment, teeth whitening, and smile makeovers to boost confidence and durability. 
           </p>
 
           {/* Buttons */}
@@ -38,13 +37,13 @@ export default function Hero() {
               href="#"
               className="bg-[#225555] border border-[#225555] text-white px-8 py-4 text-center uppercase "
             >
-              GET APPOINTMENT
+              Book A Consultation
             </a>
             <a
               href="#"
               className="bg-transparent border-[2px] border-[#319684] text-white px-8 py-4 text-center uppercase  hover:bg-white hover:text-[#003B3B] transition"
             >
-              VIEW OUR SERVICES
+              Explore Our Services
             </a>
           </div>
 

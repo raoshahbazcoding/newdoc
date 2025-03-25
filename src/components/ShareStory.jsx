@@ -10,7 +10,7 @@ export default function ShareStory() {
         <div className="md:col-span-9 relative">
           <div className="absolute inset-0 bg-[#1d5c5c]/80 z-10"></div>
           <div
-            className="w-full h-[600px] bg-cover bg-center"
+            className="w-full h-[900px] md:h-[750px] bg-cover bg-center"
             style={{ backgroundImage: `url(${storyImg})` }}
           ></div>
 
@@ -19,18 +19,20 @@ export default function ShareStory() {
               <img src={video} alt="VIDEO" className='h-10 md:h-15' />
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 max-w-4xl">
-              Your Teeth, Your Turn - Act Now and Rewrite Your Story!
-            </h2>
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-light mb-6 max-w-4xl">
+            See How We Have Transformed Smiles in Edinburgh
+            </h3>
             <p className="text-lg mb-8 max-w-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis,
-              pulvinar dapibus leo.
+            Actual outcomes demonstrate themselves best. Preview our transformation pictures of before-and-after cases while you picture the improved self-assured look you will achieve. City Dental Care offers cosmetic and dental services.
+            </p>
+            <p className="text-lg mb-8 max-w-3xl">
+            They employ Invisalign clear aligners and porcelain veneers to achieve subtle yet significant changes to help our patients regain their confidence and looks. Our smile makeovers reflect our expertise and dedication to serving patients across Edinburgh, thus gaining their trust and confidence. A dream smile exists within reach of your consultation appointment.
             </p>
             <a
               href="#"
-              className="border border-white text-white px-20 py-4 inline-block uppercase hover:bg-white hover:text-[#1d5c5c] transition-colors"
+              className="border border-white text-white text-sm px-20 py-2 md:px-20 md:py-4  inline-block uppercase hover:bg-white hover:text-[#1d5c5c] transition-colors"
             >
-              SHARE YOUR STORY
+              Explore Our Patients’ Smile Journeys Now!
             </a>
           </div>
         </div>

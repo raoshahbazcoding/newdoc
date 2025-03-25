@@ -8,40 +8,40 @@ const Arrows = "/Arrow.png";
 export default function Services() {
   const services = [
     {
-      icon: <img src={Counseling} alt="Counseling" />,
-      title: "Counseling",
+      icon: <img src={Counseling} alt="Dental Consultation" />,
+      title: "Dental Consultation",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
+        "Detailed tests provide your dental wellness outcomes.",
     },
     {
-      icon: <img src={Facial} alt="Facial Aesthetic" />,
-      title: "Facial Aesthetic",
+      icon: <img src={Facial} alt="Same Day Emergency Appointments" />,
+      title: "Same-Day Emergency Appointments",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
+        "Need urgent care? Our dental practice provides emergency dental appointments on the same day patients need care.",
     },
     {
-      icon: <img src={Restorative} alt="Restorative Dentist" />,
-      title: "Restorative Dentist",
+      icon: <img src={Restorative} alt="Hygiene Services" />,
+      title: "Hygiene Services",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
+        "Our services offer routine cleanings that maintain your smile's health and freshness.",
     },
     {
-      icon: <img src={Dermal} alt="Dermal Facial Fillers" />,
-      title: "Dermal Facial Fillers",
+      icon: <img src={Dermal} alt="Implant Consultations" />,
+      title: "Implant Consultations",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
+        "Take the opportunity to find out about stable alternatives addressing tooth loss.",
     },
     {
-      icon: <img src={General} alt="General Preventative" />,
-      title: "General Preventative",
+      icon: <img src={General} alt="Wisdom Tooth Removal" />,
+      title: "Wisdom Tooth Removal",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
+        "A gentle, stress-free approach to wisdom tooth extraction.",
     },
     {
-      icon: <img src={Counseling} alt="Counseling" />,
-      title: "Counseling",
+      icon: <img src={Counseling} alt="Child Smile Care" />,
+      title: "Child Smile Care",
       description:
-        "At the Center of Intuitive Living and Wellness, we want to help you heal from past struggles and take back your inner power.",
+        "Children who get early dental visits start their future with strong smiles.",
     },
   ];
 
@@ -49,13 +49,15 @@ export default function Services() {
     <section className="pb-8 mb-1 md:mb-6 md:py-10">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
-        <div className="text-center mb-4">
-          <p className="text-lg">What can we offer you?</p>
-        </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-16">
-          Wide range of <span className="text-[#1d5c5c]">Dental Services</span>
+        
+          <h2 className="text-lg text-center font-semibold mb-5">What Services Do We Offer?</h2>
+        
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8">
+        Trusted <span className="text-[#1d5c5c]">Dental Services</span> Tailored to Enhance Your Smile
         </h2>
-
+        <p className="text-center text-sm text-gray-500 mb-10 px-2">
+        We provide all professional cosmetic and general services to improve your smile. Invisalign functions as an aligner that makes it easy to fix the teeth’ misalignment without the need for braces, and the teeth whitening services help make smiles healthier and more appealing.
+        </p>
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
@@ -68,7 +70,7 @@ export default function Services() {
                 {service.icon}
               </div>
               {/* Title */}
-              <h3 className="text-xl font-light mb-4">{service.title}</h3>
+              <h4 className="text-xl font-light mb-4">{service.title}</h4>
               {/* Description */}
               <p className="text-sm text-gray-600 mb-4">{service.description}</p>
 
@@ -80,10 +82,10 @@ export default function Services() {
           ))}
         </div>
 
-        {/* View All Services Button */}
+        {/* Explore City Dental Care Services Today */}
         <div className="text-center mt-16">
-          <a href="#" className="bg-[#1d5c5c] text-white px-8 py-4 inline-block uppercase">
-            VIEW ALL SERVICES
+          <a href="#" className="bg-[#1d5c5c] text-white px-8 py-2 md:px-8 md:py-4 inline-block uppercase">
+          Explore City Dental Care Services Today
           </a>
         </div>
       </div>
