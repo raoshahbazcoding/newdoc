@@ -4,19 +4,19 @@ import { PhoneCall,ShieldCheck ,Hospital ,HeartPulse   } from 'lucide-react';
 export default function AboutUs() {
   const features = [
     {
-      icon: <ShieldCheck className='h-8 w-8 text-[#3A6969] ' />,
+      icon: <ShieldCheck className='h-10 w-10 text-[#3A6969] ' />,
       title: "Trusted Dental Experts in Edinburgh",
       description:
         "We have trained experts who use personnel and modern tools so that you and your family get the proper dental treatment you deserve in the city of Edinburgh.",
     },
     {
-      icon: <Hospital className='text-[#3A6969] h-8 w-8' />,
+      icon: <Hospital className='text-[#3A6969] h-10 w-10' />,
       title: "Comprehensive and Affordable Dental Solutions",
       description:
         "We aim to offer dental treatments for all clients, which may include general checkups, cleanings, and complex cosmetic dentistry.",
     },
     {
-      icon: < HeartPulse  className='h-8 w-8 text-[#3A6969] ' />,
+      icon: < HeartPulse  className='h-10 w-10 text-[#3A6969] ' />,
       title: "Caring for the Personalised Smile of Each Patient",
       description:
         "From simple Invisalign treatments to an extreme smile makeover, the procedures that are followed depend on your requirements.",
@@ -36,7 +36,7 @@ export default function AboutUs() {
               <h2 className="uppercase text-[#1d5c5c]  mb-4  ">
                 ABOUT US
               </h2>
-              <h3 className="text-4xl md:text-5xl font-light mb-6">
+              <h3 className="text-4xl md:text-5xl  mb-6">
               Ready to Transform Your Smile?
               </h3>
               <p className="text-gray-600 mb-8 ">
@@ -47,12 +47,12 @@ export default function AboutUs() {
               <div className="space-y-6">
                 {features.map((feature, index) => (
                   <div key={index} className="flex gap-4">
-                    <div className="bg-[#e8f4f4] p-4 h-fit">{feature.icon}</div>
+                    <div className="bg-[#e8f4f4] p-6 flex items-center">{feature.icon}</div>
                     <div>
                       <h4 className="text-xl font-light mb-2">
                         {feature.title}
                       </h4>
-                      <p className="text-gray-500">{feature.description}</p>
+                      <p className= " text-gray-500 ">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -60,21 +60,19 @@ export default function AboutUs() {
 
               <div className="flex gap-4 mt-8 justify-center items-center">
                 <button
-                  className="bg-[#1d5c5c] text-white px-2 py-3 text-sm uppercase"
+                  className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase"
                 >
-                   Pain-Free Dentistry in Edinburgh – Book Now!
+                   Pain-Free Dentistry – Book Now!
                 </button>
-                <a
-                  href="#"
-                  className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-6 py-3 uppercase flex items-center hover:bg-[#339485] hover:text-white "
+                <button
+                  className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-4 py-4 text-sm uppercase flex items-center hover:bg-[#339485] hover:text-white "
                 >
-                  {/* <img src={call} alt="call" className=" hover:text-whit"/> */}
-                  <PhoneCall />
-                  <span className=" font-semibold px-2 tex-xl  ">
+                  <PhoneCall  />
+                  <span className=" font-semibold px-4 tex-xl  ">
                     
                   01312282442
                   </span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -91,7 +89,7 @@ export default function AboutUs() {
               <h3 className="text-3xl text-center   font-light mb-6">
               Ready to Transform Your Smile?
               </h3>
-              <p className="text-gray-600 text-center mb-8 ">
+              <p className="text-gray-600 text-center mb-8  ">
               At City Dental Care in Edinburgh, we use the best services and technology in a friendly environment to enhance patient’s lives. We are a team of dentists with more than 20 years of experience and aim to ensure that every patient receives a comfortable dental experience, ranging from a simple examination to cosmetic surgery.
               </p>
 
@@ -102,7 +100,7 @@ export default function AboutUs() {
                     key={index}
                     className="flex gap-4 flex-col items-center "
                   >
-                    <div className="bg-[#e8f4f4] p-4 h-fit ">
+                    <div className="bg-[#e8f4f4] p-4 h-fit  ">
                       {feature.icon}
                     </div>
 
@@ -128,7 +126,7 @@ export default function AboutUs() {
                   href="#"
                   className="bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
                 >
-                 Pain-Free Dentistry in Edinburgh – Book Now! 
+                 Pain-Free Dentistry – Book Now! 
                 </a>
                 <a
                   href="#"

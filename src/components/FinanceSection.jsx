@@ -19,11 +19,11 @@ export default function FinanceSection() {
     <section className="container mx-auto px-4 py-30 flex flex-col md:flex-row items-center gap-12">
       {/* Left Side (Text) */}
       <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl   max-w-4xl ">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl   max-w-4xl ">
           Looking for a beautiful white smile with 0% Finance? 
           Start Today!
         </h2>
-        <p className="mt-4 text-gray-500 leading-relaxed">
+        <p className="mt-4 text-gray-500 ">
         You can even opt for affordable payment plans with <strong>0% interest</strong> through the City Dental Care clinic in Edinburgh. All our orthodontic procedures, including Invisalign, are available for just <strong> £5 a week</strong>!
         </p>
         <button  className="mt-6 inline-block bg-[#1d5c5c] text-white  text-sm uppercase px-4 py-4  ">
@@ -36,7 +36,7 @@ export default function FinanceSection() {
         {faqs.map((faq, index) => (
           <div key={index} className=" rounded-lg mb-3">
             <button
-              className="w-full flex justify-between items-center px-4 py-4 rounded-xl bg-[#E8F4F4] text-gray-900 text-left"
+              className="w-full flex justify-between items-center px-4 py-6 rounded-xl bg-[#E8F4F4] text-gray-900 text-left"
               onClick={() => toggleFAQ(index)}
             >
               <span className=" font-medium">{faq.question}</span>

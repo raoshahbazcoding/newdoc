@@ -6,14 +6,14 @@ export default function   ContactUs() {
       <div className="container mx-auto px-4 hidden md:block">
         <div className="bg-[#E8F4F4] flex flex-col md:flex-row items-center rounded-lg relative ">
           {/* Left Content */}
-          <div className="p-10 md:p-16 md:w-1/2">
+          <div className="p-10 md:p-16 md:w-2/3">
             <div className="uppercase text-[#1D5C5C] font-medium mb-4">
               CONTACT US
             </div>
-            <h2 className="text-4xl md:text-5xl font-light mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl   max-w-4xl  mb-4">
             Contact City Dental Care Experts Today
             </h2>
-            <p className="text-gray-700 mb-8">
+            <p className="text-gray-700 mb-8 max-w-3xl  ">
             Our dental clinic in <strong>Edinburgh</strong> specialises in all types of dental treatments, including Invisalign and teeth-whitening options. Thanks to our expert team, our clinic at <strong>9 Earl Grey Street</strong> delivers superior dental services to patients in a comfortable environment.
             </p>
             <button
