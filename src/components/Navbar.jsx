@@ -44,17 +44,17 @@ export default function Navbar() {
           </a>
 
           {/* Contact Details */}
-          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap md:flex-row gap-4 md:gap-6 mt-4 md:mt-0  ">
             {[
-              { icon: <Clock className="text-white h-3 w-3 md:h-5 md:w-5" />, label: "Opening Time", value: "Mon - Fri 8AM - 7PM" },
+              { icon: <Clock className="text-white  h-3 w-3 md:h-5 md:w-5" />, label: "Opening Time", value: "Mon - Fri 8AM - 7PM" },
               { icon: <Phone className="text-white h-3 w-3 md:h-5 md:w-5 " />, label: "Phone", value: "01312282442" },
               { icon: <MapPin className="text-white h-5 w-5" />, label: "Location", value: "9 Earl Grey St ,United Kingdom", hidden: true },
             ].map((item, index) => (
               <div key={index} className={`flex items-center gap-2 ${item.hidden ? "hidden md:flex" : ""}`}>
                 <div className="bg-[#1d5c5c] p-2 rounded">{item.icon}</div>
                 <div>
-                  <p className="text-xs text-gray-500">{item.label}</p>
-                  <p className="text-xs md:text-sm">{item.value}</p>
+                  <span className="text-[16px] text-gray-500">{item.label}</span> <br />
+                  <span className="text-[16px] md:text-sm">{item.value}</span>
                 </div>
               </div>
             ))}

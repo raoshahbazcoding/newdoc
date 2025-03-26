@@ -93,9 +93,9 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="bg-[#173C3C] py-4 text-center text-sm ">
-        <div className="container mx-auto px-4">
-          Copyright © 2025 Theme. All rights reserved. Powered by City Dental Clinic.
+      <div className="bg-[#173C3C] py-4 text-center text-[12px] ">
+        <div className=" container mx-auto px-4  ">
+          <span className="text-[16px]">Copyright © 2025 Theme. All rights reserved. Powered by City Dental Clinic.</span>
         </div>
       </div>
     </footer>
