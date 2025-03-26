@@ -24,5 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 body, p, div ,button  {
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
+  color: text-gray-500;
+  font-size: 17px; 
 
 }

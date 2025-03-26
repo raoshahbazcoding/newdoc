@@ -31,7 +31,7 @@ export default function ClientTestimonials() {
       <h2 className="text-4xl py-10 md:text-5xl  text-center ">
       What Do Our Patients Think?
       </h2>
-      <p className="mb-16 text-center px-2">
+      <p className="mb-16 text-center max-w-3xl text-gray-500">
       The real-life patient experiences and reviews demonstrate our dedication to delivering high-quality patient care. Our patients consistently validate the remarkable results and top-tier treatment they received at our facility for Invisalign and cosmetic procedures.
       </p>
 

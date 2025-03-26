@@ -19,16 +19,16 @@ export default function FinanceSection() {
     <section className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-12">
       {/* Left Side (Text) */}
       <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="text-3xl md:text-4xl font-semibold leading-snug text-gray-900">
-          Looking for a beautiful white smile with 0% Finance? <br />
+        <h2 className="text-3xl md:text-4xl lg:text-5xl   max-w-4xl ">
+          Looking for a beautiful white smile with 0% Finance? 
           Start Today!
         </h2>
-        <p className="mt-4 text-gray-700 leading-relaxed">
+        <p className="mt-4 text-gray-500 leading-relaxed">
         You can even opt for affordable payment plans with <strong>0% interest</strong> through the City Dental Care clinic in Edinburgh. All our orthodontic procedures, including Invisalign, are available for just <strong> £5 a week</strong>!
         </p>
-        <a href="#" className="mt-6 inline-block bg-[#1d5c5c] text-white font-medium text-sm uppercase px-8 py-3 md:px-12 md:py-3 ">
+        <button  className="mt-6 inline-block bg-[#1d5c5c] text-white  text-sm uppercase px-4 py-4  ">
           Transform Your Smile for £5/Week!
-        </a>
+        </button>
       </div>
 
       {/* Right Side (FAQ Accordion) */}

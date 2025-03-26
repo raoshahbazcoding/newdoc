@@ -52,12 +52,15 @@ export default function Services() {
         
           <h2 className="text-lg text-center font-semibold mb-5">What Services Do We Offer?</h2>
         
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8">
+        <div className="flex flex-col items-center justify-center">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8 max-w-4xl ">
         Trusted <span className="text-[#1d5c5c]">Dental Services</span> Tailored to Enhance Your Smile
         </h2>
-        <p className="text-center text-sm text-gray-500 mb-10 px-2">
+        
+        <p className="text-center text-sm text-gray-500 mb-10  max-w-3xl">
         We provide all professional cosmetic and general services to improve your smile. Invisalign functions as an aligner that makes it easy to fix the teeth’ misalignment without the need for braces, and the teeth whitening services help make smiles healthier and more appealing.
         </p>
+        </div>
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
@@ -83,10 +86,10 @@ export default function Services() {
         </div>
 
         {/* Explore City Dental Care Services Today */}
-        <div className="text-center mt-16">
-          <a href="#" className="bg-[#1d5c5c] text-white px-8 py-2 md:px-8 md:py-4 inline-block uppercase">
+        <div className="mt-8 text-center">
+        <button className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase text-center ">
           Explore City Dental Care Services Today
-          </a>
+        </button>
         </div>
       </div>
     </section>

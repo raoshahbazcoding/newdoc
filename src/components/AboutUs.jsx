@@ -39,12 +39,12 @@ export default function AboutUs() {
               <h3 className="text-4xl md:text-5xl font-light mb-6">
               Ready to Transform Your Smile?
               </h3>
-              <p className="text-gray-600 mb-8 w-[70%]">
+              <p className="text-gray-600 mb-8 ">
               At City Dental Care in Edinburgh, we use the best services and technology in a friendly environment to enhance patient’s lives. We are a team of dentists with more than 20 years of experience and aim to ensure that every patient receives a comfortable dental experience, ranging from a simple examination to cosmetic surgery.
 
               </p>
 
-              <div className="space-y-6 w-[70%]">
+              <div className="space-y-6">
                 {features.map((feature, index) => (
                   <div key={index} className="flex gap-4">
                     <div className="bg-[#e8f4f4] p-4 h-fit">{feature.icon}</div>
@@ -58,13 +58,12 @@ export default function AboutUs() {
                 ))}
               </div>
 
-              <div className="flex gap-4 mt-8">
-                <a
-                  href="#"
-                  className="bg-[#1d5c5c] text-white px-4 py-4 text-sm uppercase"
+              <div className="flex gap-4 mt-8 justify-center items-center">
+                <button
+                  className="bg-[#1d5c5c] text-white px-2 py-3 text-sm uppercase"
                 >
                    Pain-Free Dentistry in Edinburgh – Book Now!
-                </a>
+                </button>
                 <a
                   href="#"
                   className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-6 py-3 uppercase flex items-center hover:bg-[#339485] hover:text-white "
@@ -127,7 +126,7 @@ export default function AboutUs() {
               <div className="flex  flex-col gap-4 m-8 ">
                 <a
                   href="#"
-                  className="bg-[#1d5c5c] text-sm text-white px-4 py-2 uppercase text-center"
+                  className="bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center"
                 >
                  Pain-Free Dentistry in Edinburgh – Book Now! 
                 </a>

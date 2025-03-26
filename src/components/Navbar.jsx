@@ -114,7 +114,7 @@ export default function Navbar() {
           </nav>
 
           {/* Appointment Button (Desktop Only) */}
-          <a href="#" className="hidden md:block bg-[#1d5c5c] text-white px-6 py-2 text-sm font-medium uppercase">
+          <a href="#" className="hidden md:block bg-[#1d5c5c] text-white px-4 py-3 text-sm uppercase text-center">
             GET APPOINTMENT
           </a>
 
