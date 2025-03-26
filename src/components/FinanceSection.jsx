@@ -16,7 +16,7 @@ export default function FinanceSection() {
   };
 
   return (
-    <section className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center gap-12">
+    <section className="container mx-auto px-4 py-30 flex flex-col md:flex-row items-center gap-12">
       {/* Left Side (Text) */}
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl lg:text-5xl   max-w-4xl ">
