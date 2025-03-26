@@ -7,13 +7,13 @@ export default function AboutUs() {
       icon: <ShieldCheck className='h-10 w-10 text-[#3A6969] ' />,
       title: "Trusted Dental Experts in Edinburgh",
       description:
-        "We have trained experts who use personnel and modern tools so that you and your family get the proper dental treatment you deserve in the city of Edinburgh.",
+        "Our expert team uses advanced tools to provide you and your family with top-quality dental care in Edinburgh.",
     },
     {
       icon: <Hospital className='text-[#3A6969] h-10 w-10' />,
       title: "Comprehensive and Affordable Dental Solutions",
       description:
-        "We aim to offer dental treatments for all clients, which may include general checkups, cleanings, and complex cosmetic dentistry.",
+        "We offer dental treatments for all clients, which may include general checkups, cleanings, and complex cosmetic dentistry.",
     },
     {
       icon: < HeartPulse  className='h-10 w-10 text-[#3A6969] ' />,
@@ -49,10 +49,10 @@ export default function AboutUs() {
                   <div key={index} className="flex gap-4">
                     <div className="bg-[#e8f4f4] p-6 flex items-center">{feature.icon}</div>
                     <div>
-                      <h4 className="text-xl font-light mb-2">
+                      <h4 className="text-xl  mb-2">
                         {feature.title}
                       </h4>
-                      <p className= " text-gray-500 ">{feature.description}</p>
+                      <p className= " text-gray-500">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -68,7 +68,7 @@ export default function AboutUs() {
                   className="border border-[#225555] text-[#225555]  bg-[#E4F5F5] px-4 py-4 text-sm uppercase flex items-center hover:bg-[#339485] hover:text-white "
                 >
                   <PhoneCall  />
-                  <span className=" font-semibold px-4 tex-xl  ">
+                  <span className=" font-semibold px-4  ">
                     
                   01312282442
                   </span>
