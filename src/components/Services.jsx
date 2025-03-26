@@ -50,7 +50,7 @@ export default function Services() {
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         
-          <h2 className="text-lg text-center font-semibold mb-5">What Services Do We Offer?</h2>
+          <div  className="uppercase text-center text-[#1D5C5C]  mb-4 ">What Services Do We Offer?</div>
         
         <div className="flex flex-col items-center justify-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-center mb-8 max-w-4xl ">

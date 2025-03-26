@@ -33,9 +33,9 @@ export default function AboutUs() {
             </div>
 
             <div>
-              <h2 className="uppercase text-[#1d5c5c]  mb-4  ">
+              <div className="uppercase text-[#1D5C5C]  mb-4  ">
                 ABOUT US
-              </h2>
+              </div>
               <h3 className="text-4xl md:text-5xl  mb-6">
               Ready to Transform Your Smile?
               </h3>
