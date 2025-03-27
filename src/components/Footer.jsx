@@ -21,8 +21,8 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-[35px] font-semibold mb-6">Quick Links</h3>
+          <div className="ml-[100px]">
+            <h3 className="text-[30px] font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
               <li><a href="#" className="flex items-center hover:underline transition"><ChevronRight className="mr-2 h-4 w-4" /> Home</a></li>
               <li><a href="#" className="flex items-center hover:underline transition"><ChevronRight className="mr-2 h-4 w-4" /> About</a></li>
@@ -33,8 +33,8 @@ export default function Footer() {
           </div>
 
           {/* Working Hours */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-[35px] font-semibold mb-6">Working Time</h3>
+          <div >
+            <h3 className="text-[30px] font-semibold mb-6">Working Time</h3>
             <ul className="space-y-4">
               <li>Monday-Friday: 8AM-8PM</li>
               <li>Saturday: 9AM-6PM</li>
@@ -43,8 +43,8 @@ export default function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-[35px] font-semibold mb-6">Contact Us</h3>
+          <div >
+            <h3 className="text-[30px] font-semibold mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center space-x-2"><MapPin className="h-5 w-5" /><span>9 Earl Grey St, <br /> Edinburgh EH3 9BN, United Kingdom</span></li>
               <li className="flex items-center space-x-2"><Contact className="h-5 w-5" /><span>info@citydentalcare.co.uk</span></li>

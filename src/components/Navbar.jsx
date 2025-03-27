@@ -53,7 +53,7 @@ export default function Navbar() {
               <div key={index} className={`flex items-center gap-2 ${item.hidden ? "hidden md:flex" : ""}`}>
                 <div className="bg-[#1d5c5c] p-2 rounded">{item.icon}</div>
                 <div>
-                  <span className="text-[16px] text-gray-500">{item.label}</span> <br />
+                  <span className="text-[14px] text-gray-500">{item.label}</span> <br />
                   <span className="text-[16px] md:text-sm">{item.value}</span>
                 </div>
               </div>

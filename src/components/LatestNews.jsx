@@ -60,7 +60,7 @@ export default function LatestNews() {
 
               {/* News Content */}
               <div className="p-6">
-                <p className="text-lg font-semibold mb-2">{item.title}</p>
+                <h4 className="font-light mb-2">{item.title}</h4>
                 <div className="text-sm text-gray-500 mb-2 flex flex-wrap gap-2">
                   <span>• {item.date}</span>
                   <span>• {item.comments}</span>
